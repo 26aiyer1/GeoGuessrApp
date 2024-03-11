@@ -23,7 +23,7 @@ public class GoogleMapsActivity extends AppCompatActivity implements OnMapReadyC
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.id_map);
         mapFragment.getMapAsync(this);
     }
-
+    // Does not work
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         map = googleMap;
