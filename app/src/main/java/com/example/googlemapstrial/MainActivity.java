@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         String country = GeoCodingHelper.getCountryFromLocation(this, latitude, longitude);
         Toast.makeText(this, country, Toast.LENGTH_SHORT).show();*/
     }
+    //Commit practice
 
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
