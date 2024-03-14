@@ -1,25 +1,10 @@
 [
   {
-    "elementType": "labels",
+    "featureType": "water",
+    "elementType": "geometry.fill",
     "stylers": [
       {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative.land_parcel",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative.neighborhood",
-    "stylers": [
-      {
-        "visibility": "off"
+        "color": "#05a4ed"
       }
     ]
   }
