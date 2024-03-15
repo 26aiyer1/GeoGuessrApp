@@ -5,6 +5,7 @@ import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,10 +16,16 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import android.content.Intent;
+import android.widget.Button;
 
 public class GoogleMapsActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleMap.OnMapClickListener {
 
     private GoogleMap map;
+
+    Button back;
+
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +43,9 @@ public class GoogleMapsActivity extends AppCompatActivity implements OnMapReadyC
         map.setOnMapClickListener(this);
         map.getUiSettings().setZoomControlsEnabled(true);
         map.setMapType( GoogleMap.MAP_TYPE_NORMAL );
+        back = findViewById(R.id.back);
+
+        intent = new Intent(GoogleMapsActivity.this, MainActivity.class);
 
         try
         {
@@ -50,6 +60,13 @@ public class GoogleMapsActivity extends AppCompatActivity implements OnMapReadyC
         {
             Log.e( TAG, "Can't find style. Error: ", e );
         }
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(intent);
+            }
+        });
 
     }
 
