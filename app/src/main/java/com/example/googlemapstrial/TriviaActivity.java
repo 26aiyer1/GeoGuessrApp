@@ -21,7 +21,7 @@ public class TriviaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_trivia);
 
         // Initialize UI elements
-        questionTextView = findViewById(R.id.questionTextView);
+        questionTextView = findViewById(R.id.TriviaGameTextView);
         option1Button = findViewById(R.id.option1Button);
         option2Button = findViewById(R.id.option2Button);
         option3Button = findViewById(R.id.option3Button);
