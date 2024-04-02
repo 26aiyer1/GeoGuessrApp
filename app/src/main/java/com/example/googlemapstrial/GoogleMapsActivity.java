@@ -47,7 +47,7 @@ public class GoogleMapsActivity extends AppCompatActivity implements OnMapReadyC
 
         intent = new Intent(GoogleMapsActivity.this, MainActivity.class);
 
-        try
+       try
         {
             map.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.style_json ) );
         }
@@ -67,12 +67,10 @@ public class GoogleMapsActivity extends AppCompatActivity implements OnMapReadyC
 
     @Override
     public void onMapClick(@NonNull LatLng latLng) {
-        // Handle map click
         LatLng location = new LatLng(latLng.latitude, latLng.longitude);
         Marker marker = map.addMarker(new MarkerOptions().position(location).title("marker"));
         String country = GeoCodingHelper.getCountryFromLocation(this, location.latitude, location.longitude);
         Toast.makeText(this, country, Toast.LENGTH_SHORT).show();
-        // Remove marker after toast message
         marker.remove();
     }
 }
