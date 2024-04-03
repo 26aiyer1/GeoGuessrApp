@@ -49,11 +49,16 @@ public class GoogleMapsActivity extends AppCompatActivity implements OnMapReadyC
 
         try
         {
-            map.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.style_json ) );
+            boolean success = map.setMapStyle(
+                    MapStyleOptions.loadRawResourceStyle(this, R.raw.style_json ) );
+            if( !success )
+            {
+                Log.e( TAG, "Style parsing failed." );
+            }
         }
         catch( Resources.NotFoundException e )
         {
-            e.printStackTrace();
+            Log.e( TAG, "Can't find style. Error: ", e );
         }
 
         back.setOnClickListener(new View.OnClickListener() {
