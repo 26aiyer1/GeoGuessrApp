@@ -12,6 +12,7 @@ android {
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
+        multiDexEnabled =  true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -40,4 +41,8 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("com.google.android.gms:play-services-maps:18.2.0")
+    implementation ("com.android.support:multidex:1.0.3")
+    implementation("com.google.ai.client.generativeai:generativeai:0.2.2")
+    implementation("com.google.guava:guava:31.0.1-android")
+    implementation("org.reactivestreams:reactive-streams:1.0.4")
 }
