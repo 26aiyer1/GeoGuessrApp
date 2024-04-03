@@ -2,8 +2,6 @@ package com.example.googlemapstrial;
 
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,12 +12,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     Button startButton;
-
-    Button aiButton;
     Intent intent;
-    Intent intent2;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,10 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         startButton = findViewById(R.id.startButton);
 
-        aiButton = findViewById(R.id.aibutton);
-
         intent = new Intent(MainActivity.this,GoogleMapsActivity.class);
-        intent2 = new Intent(MainActivity.this, GeminiClass.class);
 
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,17 +29,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        aiButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(intent2);
-            }
-        });
-
-
-
-
     }
 
 
