@@ -37,30 +37,17 @@ public class GoogleMapsActivity extends AppCompatActivity implements OnMapReadyC
         map.getUiSettings().setZoomControlsEnabled(true);
         map.setMapType( GoogleMap.MAP_TYPE_NORMAL );
 
-        try
-        {
-            boolean success = map.setMapStyle(
-                    MapStyleOptions.loadRawResourceStyle(this, R.raw.style_json ) );
-            if( !success )
-            {
-                Log.e( TAG, "Style parsing failed." );
-            }
-        }
-        catch( Resources.NotFoundException e )
-        {
-            Log.e( TAG, "Can't find style. Error: ", e );
-        }
+            map.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.style_json ) );
+
 
     }
 
     @Override
     public void onMapClick(@NonNull LatLng latLng) {
-        // Handle map click
         LatLng location = new LatLng(latLng.latitude, latLng.longitude);
         Marker marker = map.addMarker(new MarkerOptions().position(location).title("marker"));
         String country = GeoCodingHelper.getCountryFromLocation(this, location.latitude, location.longitude);
         Toast.makeText(this, country, Toast.LENGTH_SHORT).show();
-        // Remove marker after toast message
         marker.remove();
     }
 }

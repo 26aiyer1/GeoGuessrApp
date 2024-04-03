@@ -20,6 +20,9 @@
         android:theme="@style/Theme.GoogleMapsTrial"
         tools:targetApi="31">
         <activity
+            android:name=".GeminiClass"
+            android:exported="false" />
+        <activity
             android:name=".TriviaActivity"
             android:exported="false" />
         <activity
