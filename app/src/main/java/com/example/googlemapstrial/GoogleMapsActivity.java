@@ -47,14 +47,9 @@ public class GoogleMapsActivity extends AppCompatActivity implements OnMapReadyC
 
         intent = new Intent(GoogleMapsActivity.this, MainActivity.class);
 
-        try
-        {
-            map.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.style_json ) );
-        }
-        catch( Resources.NotFoundException e )
-        {
-            e.printStackTrace();
-        }
+        map.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.style_json ) );
+
+
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
