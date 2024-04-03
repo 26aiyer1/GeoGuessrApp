@@ -7,13 +7,4 @@
     tools:context=".MainActivity">
 
 
-    <Button
-        android:id="@+id/startButton"
-        android:layout_width="107dp"
-        android:layout_height="65dp"
-        android:text="Start App"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
