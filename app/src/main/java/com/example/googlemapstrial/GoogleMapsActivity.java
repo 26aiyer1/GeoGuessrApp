@@ -1,10 +1,8 @@
 package com.example.googlemapstrial;
 
-import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
-import android.content.res.Resources;
+
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
@@ -62,12 +60,10 @@ public class GoogleMapsActivity extends AppCompatActivity implements OnMapReadyC
 
     @Override
     public void onMapClick(@NonNull LatLng latLng) {
-        // Handle map click
         LatLng location = new LatLng(latLng.latitude, latLng.longitude);
         Marker marker = map.addMarker(new MarkerOptions().position(location).title("marker"));
         String country = GeoCodingHelper.getCountryFromLocation(this, location.latitude, location.longitude);
         Toast.makeText(this, country, Toast.LENGTH_SHORT).show();
-        // Remove marker after toast message
         marker.remove();
     }
 }

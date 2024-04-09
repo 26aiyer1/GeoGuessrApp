@@ -17,7 +17,7 @@ public class GeoCodingHelper {
                 countryName = addresses.get(0).getCountryName();
             }
             else{
-                countryName = "no country just ocean";
+                countryName = "no country just water";
             }
         } catch (IOException e) {
             e.printStackTrace();
