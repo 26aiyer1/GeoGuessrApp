@@ -20,28 +20,10 @@
         android:theme="@style/Theme.GoogleMapsTrial"
         tools:targetApi="31" >
 
-        <!--
-             TODO: Before you run your application, you need a Google Maps API key.
 
-             To get one, follow the directions here:
-
-                https://developers.google.com/maps/documentation/android-sdk/get-api-key
-
-             Once you have your API key (it starts with "AIza"), define a new property in your
-             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
-             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
-        -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
-
-        <activity
-            android:name=".MapsActivity"
-            android:exported="false"
-            android:label="@string/title_activity_maps" />
-        <activity
-            android:name=".TriviaWithGemini"
-            android:exported="false" />
+            android:value="AIzaSyDRr9mAjb5Ak8jSQxn0teCi3eqPECNc6TA" />
         <activity
             android:name=".GeminiClass"
             android:exported="false" />
