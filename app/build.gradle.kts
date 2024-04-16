@@ -1,5 +1,6 @@
 plugins {
     id("com.android.application")
+    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
 
 android {
@@ -35,6 +36,9 @@ android {
                 srcDirs("src/main/assets")
             }
         }
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 

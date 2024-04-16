@@ -2,9 +2,11 @@ package com.example.googlemapstrial;
 
 
 
+import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,6 +33,8 @@ public class GoogleMapsActivity extends AppCompatActivity implements OnMapReadyC
 
     private GoogleMap map;
 
+    TextView country;
+
     Button back;
 
     Intent intent;
@@ -41,45 +45,44 @@ public class GoogleMapsActivity extends AppCompatActivity implements OnMapReadyC
 
     String countryGenerated;
 
+    @SuppressLint("CutPasteId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_google_maps_activity);
+        country = findViewById(R.id.country);
+        back = findViewById(R.id.back);
+        genQuestion = findViewById(R.id.genQuestion);
+
+        intent = new Intent(GoogleMapsActivity.this, MainActivity.class);
+
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(intent);
+            }
+        });
+
+        genQuestion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                generateQuestion();
+            }
+        });
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.id_map);
         assert mapFragment != null;
         mapFragment.getMapAsync(this);
     }
+    @SuppressLint("CutPasteId")
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
-
         map = googleMap;
         map.setOnMapClickListener(this);
         map.getUiSettings().setZoomControlsEnabled(true);
         map.setMapType( GoogleMap.MAP_TYPE_NORMAL );
-        back = findViewById(R.id.genQuestion);
-        genQuestion = findViewById(R.id.genQuestion);
-
-        intent = new Intent(GoogleMapsActivity.this, MainActivity.class);
-
         map.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.style_json ) );
-
-
-
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(intent);
-            }
-        });
-
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(intent);
-            }
-        });
-
     }
 
     @Override
@@ -93,12 +96,13 @@ public class GoogleMapsActivity extends AppCompatActivity implements OnMapReadyC
 
 
     public void generateQuestion(){
+        Toast.makeText(this, "Working on it!", Toast.LENGTH_SHORT).show();
         GenerativeModel gm = new GenerativeModel("gemini-pro",
                 "AIzaSyArulVC_IsImpG9vRtDy-D8Gi4vOMEDZtc");
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
 
         Content content = new Content.Builder()
-                .addText("Generate a random country name in the following format: (Country) ")
+                .addText("Name any country in the world. Just say the name of the country.")
                 .build();
 
 
@@ -109,6 +113,7 @@ public class GoogleMapsActivity extends AppCompatActivity implements OnMapReadyC
                 public void onSuccess(GenerateContentResponse result) {
                     question = result.getText();
                     countryGenerated = question;
+                    country.setText(question);
 
                 }
                 @Override

@@ -50,7 +50,6 @@ public class GeminiClass extends AppCompatActivity {
         back = findViewById(R.id.goBack);
         editText = findViewById(R.id.editText);
 
-        generateQuestion();
 
 
         Intent intent = new Intent(GeminiClass.this, MainActivity.class);
@@ -82,6 +81,7 @@ public class GeminiClass extends AppCompatActivity {
 
 
     public void generateQuestion(){
+        Toast.makeText(this, "Working on it!", Toast.LENGTH_SHORT).show();
         GenerativeModel gm = new GenerativeModel("gemini-pro",
                 "AIzaSyArulVC_IsImpG9vRtDy-D8Gi4vOMEDZtc");
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
