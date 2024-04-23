@@ -63,14 +63,9 @@ public class TriviaGames extends AppCompatActivity
         buttonD.setText(allNations.get(random.nextInt(245)).getCity());
     }
 
-    buttonA.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Toast.makeText(TriviaGames.this, "Incorrect", Toast.LENGTH_SHORT).show();
-    }
-});
 
-    buttonB.setOnClickListener(new View.OnClickListener() {
+
+    /*buttonB.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
         Toast.makeText(TriviaGames.this, "Incorrect", Toast.LENGTH_SHORT).show();
@@ -113,7 +108,7 @@ public class TriviaGames extends AppCompatActivity
     public void onClick(View v) {
         finish();
     }
-});
+});*/
 
     //this method reads movie data from a JSON file in the assets folder, parses the data, and creates Movie objects for each entry
     private void generateNations() {
