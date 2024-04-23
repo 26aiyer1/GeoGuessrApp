@@ -74,7 +74,7 @@ public class TriviaActivity extends AppCompatActivity {
         String correctAnswer = "Paris"; // Correct answer for the example question
 
         if (selectedAnswer.equals(correctAnswer)) {
-            Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, "Incorrect. The correct answer is " + correctAnswer, Toast.LENGTH_SHORT).show();
         }
