@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_trivia.xml",
+        "source": "com.example.googlemapstrial.app-main-36:/layout/activity_trivia.xml"
+    },
+    {
+        "merged": "com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_google_maps_activity.xml",
+        "source": "com.example.googlemapstrial.app-main-36:/layout/activity_google_maps_activity.xml"
+    },
+    {
+        "merged": "com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_gemini_class.xml",
+        "source": "com.example.googlemapstrial.app-main-36:/layout/activity_gemini_class.xml"
+    },
+    {
+        "merged": "com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_main.xml",
+        "source": "com.example.googlemapstrial.app-main-36:/layout/activity_main.xml"
+    }
+]

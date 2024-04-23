@@ -1,0 +1,36 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id TriviaGameTextView
+id aibutton
+id back
+id button
+id country
+id editText
+id geminitext
+id genQuestion
+id goBack
+id id_map
+id option1Button
+id option2Button
+id option3Button
+id startButton
+id testgenerate
+id testsubmit
+id titleTextView
+layout activity_gemini_class
+layout activity_google_maps_activity
+layout activity_main
+layout activity_trivia
+mipmap ic_launcher
+mipmap ic_launcher_round
+raw style_json
+string app_name
+string title_activity_maps
+style Base.Theme.GoogleMapsTrial
+style Theme.GoogleMapsTrial
+xml backup_rules
+xml data_extraction_rules
