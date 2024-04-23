@@ -16,9 +16,13 @@ public class MainActivity extends AppCompatActivity {
     Button startButton;
 
     Button aiButton;
+
+    Button encyclopediaButton;
     Intent intent;
 
     Intent i;
+
+    Intent i2;
 
 
     @SuppressLint("MissingInflatedId")
@@ -31,9 +35,13 @@ public class MainActivity extends AppCompatActivity {
 
         aiButton = findViewById(R.id.aibutton);
 
+        encyclopediaButton = findViewById(R.id.encyclopedia_button);
+
         intent = new Intent(MainActivity.this,GoogleMapsActivity.class);
 
         i = new Intent(MainActivity.this, GeminiClass.class);
+
+        i2 = new Intent(MainActivity.this, Encyclopedia.class);
 
 
         startButton.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +55,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(i);
+            }
+        });
+
+        encyclopediaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(i2);
             }
         });
 

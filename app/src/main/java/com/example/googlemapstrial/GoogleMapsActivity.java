@@ -51,7 +51,7 @@ public class GoogleMapsActivity extends AppCompatActivity implements OnMapReadyC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_google_maps_activity);
         country = findViewById(R.id.country);
-        back = findViewById(R.id.back);
+        back = findViewById(R.id.encyclo_back);
         genQuestion = findViewById(R.id.genQuestion);
 
         intent = new Intent(GoogleMapsActivity.this, MainActivity.class);
