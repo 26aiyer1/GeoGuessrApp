@@ -1,5 +1,13 @@
 [
     {
+        "merged": "com.example.googlemapstrial.app-mergeDebugResources-33:/layout/card_design.xml",
+        "source": "com.example.googlemapstrial.app-main-36:/layout/card_design.xml"
+    },
+    {
+        "merged": "com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_trivia_games.xml",
+        "source": "com.example.googlemapstrial.app-main-36:/layout/activity_trivia_games.xml"
+    },
+    {
         "merged": "com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_trivia.xml",
         "source": "com.example.googlemapstrial.app-main-36:/layout/activity_trivia.xml"
     },
@@ -10,6 +18,14 @@
     {
         "merged": "com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_gemini_class.xml",
         "source": "com.example.googlemapstrial.app-main-36:/layout/activity_gemini_class.xml"
+    },
+    {
+        "merged": "com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_encyclopedia.xml",
+        "source": "com.example.googlemapstrial.app-main-36:/layout/activity_encyclopedia.xml"
+    },
+    {
+        "merged": "com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_geo.xml",
+        "source": "com.example.googlemapstrial.app-main-36:/layout/activity_geo.xml"
     },
     {
         "merged": "com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_main.xml",

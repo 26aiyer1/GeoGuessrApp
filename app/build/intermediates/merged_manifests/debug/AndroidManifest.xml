@@ -42,6 +42,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.GoogleMapsTrial" >
+        <activity
+            android:name="com.example.googlemapstrial.TriviaGames"
+            android:exported="false" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDRr9mAjb5Ak8jSQxn0teCi3eqPECNc6TA" />

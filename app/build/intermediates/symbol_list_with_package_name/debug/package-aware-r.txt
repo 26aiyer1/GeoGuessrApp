@@ -3148,6 +3148,7 @@ id CTRL
 id FUNCTION
 id META
 id NO_DEBUG
+id RecyclerView
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -3232,7 +3233,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
-id back
+id backk
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3249,6 +3250,8 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id capitalText
+id cardView
 id carryVelocity
 id center
 id centerCrop
@@ -3280,6 +3283,7 @@ id coordinator
 id cos
 id counterclockwise
 id country
+id countryText
 id cradle
 id currentState
 id custom
@@ -3325,6 +3329,8 @@ id edit_query
 id edit_text_id
 id elastic
 id embed
+id encyclo_back
+id encyclopedia_button
 id end
 id endToStart
 id enterAlways
@@ -3531,6 +3537,7 @@ id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id score
 id screen
 id scroll
 id scrollIndicatorDown
@@ -3613,6 +3620,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textViewQuestion
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3778,10 +3786,13 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_encyclopedia
 layout activity_gemini_class
+layout activity_geo
 layout activity_google_maps_activity
 layout activity_main
 layout activity_trivia
+layout card_design
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
