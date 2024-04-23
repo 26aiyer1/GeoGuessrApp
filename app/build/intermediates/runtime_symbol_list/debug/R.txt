@@ -3147,7 +3147,6 @@ int id CTRL 0x7f080003
 int id FUNCTION 0x7f080004
 int id META 0x7f080005
 int id NO_DEBUG 0x7f080006
-int id RecyclerView 0x7f080007
 int id SHIFT 0x7f080008
 int id SHOW_ALL 0x7f080009
 int id SHOW_PATH 0x7f08000a
@@ -3232,7 +3231,7 @@ int id auto 0x7f080058
 int id autoComplete 0x7f080059
 int id autoCompleteToEnd 0x7f08005a
 int id autoCompleteToStart 0x7f08005b
-int id backk 0x7f08005c
+int id back 0x7f080219
 int id barrier 0x7f08005d
 int id baseline 0x7f08005e
 int id beginOnFirstDraw 0x7f08005f
@@ -3249,8 +3248,6 @@ int id buttonPanel 0x7f08006f
 int id cache_measures 0x7f080070
 int id callMeasure 0x7f080071
 int id cancel_button 0x7f080072
-int id capitalText 0x7f080073
-int id cardView 0x7f080074
 int id carryVelocity 0x7f080075
 int id center 0x7f080076
 int id centerCrop 0x7f080077
@@ -3282,7 +3279,6 @@ int id coordinator 0x7f080090
 int id cos 0x7f080091
 int id counterclockwise 0x7f080092
 int id country 0x7f080093
-int id countryText 0x7f080094
 int id cradle 0x7f080095
 int id currentState 0x7f080096
 int id custom 0x7f080097
@@ -3328,8 +3324,6 @@ int id edit_query 0x7f0800be
 int id edit_text_id 0x7f0800bf
 int id elastic 0x7f0800c0
 int id embed 0x7f0800c1
-int id encyclo_back 0x7f0800c2
-int id encyclopedia_button 0x7f0800c3
 int id end 0x7f0800c4
 int id endToStart 0x7f0800c5
 int id enterAlways 0x7f0800c6
@@ -3536,7 +3530,6 @@ int id save_non_transition_alpha 0x7f08018e
 int id save_overlay_view 0x7f08018f
 int id sawtooth 0x7f080190
 int id scale 0x7f080191
-int id score 0x7f080192
 int id screen 0x7f080193
 int id scroll 0x7f080194
 int id scrollIndicatorDown 0x7f080195
@@ -3619,7 +3612,6 @@ int id textSpacerNoButtons 0x7f0801e1
 int id textSpacerNoTitle 0x7f0801e2
 int id textStart 0x7f0801e3
 int id textTop 0x7f0801e4
-int id textViewQuestion 0x7f0801e6
 int id text_input_end_icon 0x7f0801e7
 int id text_input_error_icon 0x7f0801e8
 int id text_input_start_icon 0x7f0801e9
@@ -3785,13 +3777,10 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
-int layout activity_encyclopedia 0x7f0b001c
 int layout activity_gemini_class 0x7f0b001d
-int layout activity_geo 0x7f0b001e
 int layout activity_google_maps_activity 0x7f0b001f
 int layout activity_main 0x7f0b0020
 int layout activity_trivia 0x7f0b0021
-int layout card_design 0x7f0b0023
 int layout custom_dialog 0x7f0b0024
 int layout design_bottom_navigation_item 0x7f0b0025
 int layout design_bottom_sheet_dialog 0x7f0b0026
