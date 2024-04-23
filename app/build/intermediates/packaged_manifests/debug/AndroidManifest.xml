@@ -43,7 +43,10 @@
         android:testOnly="true"
         android:theme="@style/Theme.GoogleMapsTrial" >
         <activity
-            android:name="com.example.googlemapstrial.TriviaGames"
+            android:name="com.example.googlemapstrial.GeoActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.googlemapstrial.GeoMain"
             android:exported="false" />
 
         <meta-data
@@ -52,9 +55,6 @@
 
         <activity
             android:name="com.example.googlemapstrial.GeminiClass"
-            android:exported="false" />
-        <activity
-            android:name="com.example.googlemapstrial.TriviaActivity"
             android:exported="false" />
         <activity
             android:name="com.example.googlemapstrial.GoogleMapsActivity"

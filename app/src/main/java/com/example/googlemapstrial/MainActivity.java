@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         i = new Intent(MainActivity.this, GeminiClass.class);
 
-        
+        i2 = new Intent(MainActivity.this, GeoMain.class);
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,6 +53,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(i);
+            }
+        });
+
+        encyclopediaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(i2);
             }
         });
 

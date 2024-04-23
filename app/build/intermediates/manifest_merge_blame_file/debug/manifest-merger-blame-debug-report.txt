@@ -49,7 +49,7 @@
 30-->[androidx.core:core:1.12.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/1ed3f9aa5fe7b39145bf297c0b847e35/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 31
 32    <application
-32-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:12:5-48:19
+32-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:12:5-49:19
 33        android:allowBackup="true"
 33-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:13:9-35
 34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -73,51 +73,51 @@
 44-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:20:9-53
 45        <activity
 45-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:22:9-24:40
-46            android:name="com.example.googlemapstrial.TriviaGames"
+46            android:name="com.example.googlemapstrial.GeoActivity"
 46-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:23:13-40
 47            android:exported="false" />
 47-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:24:13-37
-48
-49        <meta-data
-49-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:26:9-28:71
-50            android:name="com.google.android.geo.API_KEY"
-50-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:27:13-58
-51            android:value="AIzaSyDRr9mAjb5Ak8jSQxn0teCi3eqPECNc6TA" />
-51-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:28:13-68
-52
-53        <activity
-53-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:30:9-32:40
-54            android:name="com.example.googlemapstrial.GeminiClass"
-54-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:31:13-40
-55            android:exported="false" />
-55-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:32:13-37
+48        <activity
+48-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:26:9-27:39
+49            android:name="com.example.googlemapstrial.GeoMain"
+49-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:26:19-42
+50            android:exported="false" />
+50-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:27:13-37
+51
+52        <meta-data
+52-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:30:9-32:71
+53            android:name="com.google.android.geo.API_KEY"
+53-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:31:13-58
+54            android:value="AIzaSyDRr9mAjb5Ak8jSQxn0teCi3eqPECNc6TA" />
+54-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:32:13-68
+55
 56        <activity
-56-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:33:9-35:40
-57            android:name="com.example.googlemapstrial.TriviaActivity"
-57-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:34:13-43
+56-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:34:9-36:40
+57            android:name="com.example.googlemapstrial.GeminiClass"
+57-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:35:13-40
 58            android:exported="false" />
-58-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:35:13-37
+58-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:36:13-37
 59        <activity
-59-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:36:9-38:40
+59-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:37:9-39:40
 60            android:name="com.example.googlemapstrial.GoogleMapsActivity"
-60-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:37:13-47
+60-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:38:13-47
 61            android:exported="false" />
-61-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:38:13-37
+61-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:39:13-37
 62        <activity
-62-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:39:9-47:20
+62-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:40:9-48:20
 63            android:name="com.example.googlemapstrial.MainActivity"
-63-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:40:13-41
+63-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:41:13-41
 64            android:exported="true" >
-64-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:41:13-36
+64-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:42:13-36
 65            <intent-filter>
-65-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:42:13-46:29
+65-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:43:13-47:29
 66                <action android:name="android.intent.action.MAIN" />
-66-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:43:17-69
-66-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:43:25-66
+66-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:44:17-69
+66-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:44:25-66
 67
 68                <category android:name="android.intent.category.LAUNCHER" />
-68-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:45:17-77
-68-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:45:27-74
+68-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:46:17-77
+68-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:46:27-74
 69            </intent-filter>
 70        </activity>
 71        <!-- Needs to be explicitly declared on P+ -->

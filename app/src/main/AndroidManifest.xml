@@ -18,10 +18,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GoogleMapsTrial"
-        tools:targetApi="24">
+        tools:targetApi="33">
         <activity
-            android:name=".TriviaGames"
+            android:name=".GeoActivity"
             android:exported="false" />
+
+        <activity android:name=".GeoMain"
+            android:exported="false"/>
+
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -29,9 +33,6 @@
 
         <activity
             android:name=".GeminiClass"
-            android:exported="false" />
-        <activity
-            android:name=".TriviaActivity"
             android:exported="false" />
         <activity
             android:name=".GoogleMapsActivity"
