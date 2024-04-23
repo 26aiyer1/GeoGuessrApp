@@ -24,15 +24,20 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button aibutton;
 
   @NonNull
+  public final Button encyclopediaButton;
+
+  @NonNull
   public final Button startButton;
 
   @NonNull
   public final TextView titleTextView;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button aibutton,
-      @NonNull Button startButton, @NonNull TextView titleTextView) {
+      @NonNull Button encyclopediaButton, @NonNull Button startButton,
+      @NonNull TextView titleTextView) {
     this.rootView = rootView;
     this.aibutton = aibutton;
+    this.encyclopediaButton = encyclopediaButton;
     this.startButton = startButton;
     this.titleTextView = titleTextView;
   }
@@ -70,6 +75,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.encyclopedia_button;
+      Button encyclopediaButton = ViewBindings.findChildViewById(rootView, id);
+      if (encyclopediaButton == null) {
+        break missingId;
+      }
+
       id = R.id.startButton;
       Button startButton = ViewBindings.findChildViewById(rootView, id);
       if (startButton == null) {
@@ -82,8 +93,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, aibutton, startButton,
-          titleTextView);
+      return new ActivityMainBinding((ConstraintLayout) rootView, aibutton, encyclopediaButton,
+          startButton, titleTextView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

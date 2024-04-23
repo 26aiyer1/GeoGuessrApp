@@ -3155,7 +3155,6 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
-id TriviaGameTextView
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3232,7 +3231,6 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
-id back
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3244,7 +3242,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3325,6 +3322,8 @@ id edit_query
 id edit_text_id
 id elastic
 id embed
+id encyclo_back
+id encyclopedia_button
 id end
 id endToStart
 id enterAlways
@@ -3492,9 +3491,6 @@ id open_search_view_search_prefix
 id open_search_view_status_bar_spacer
 id open_search_view_toolbar
 id open_search_view_toolbar_container
-id option1Button
-id option2Button
-id option3Button
 id outline
 id outward
 id overshoot
@@ -3781,7 +3777,6 @@ layout abc_tooltip
 layout activity_gemini_class
 layout activity_google_maps_activity
 layout activity_main
-layout activity_trivia
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

@@ -7,6 +7,20 @@
     android:background="@android:color/white"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/encyclopedia_button"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="108dp"
+        android:text="Encyclopedia"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startButton"
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="271dp"
@@ -27,20 +41,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="216dp"
-        android:text="Start Game"
+        android:text="Start Map Game"
         android:textAlignment="center"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/aibutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Click here to test Gemini"
+        android:text="Start Trivia Game"
         android:textAlignment="center"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"

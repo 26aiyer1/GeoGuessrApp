@@ -3154,7 +3154,6 @@ int id SHOW_PROGRESS 0x7f08000b
 int id SYM 0x7f08000c
 int id TOP_END 0x7f08000d
 int id TOP_START 0x7f08000e
-int id TriviaGameTextView 0x7f08000f
 int id accelerate 0x7f080010
 int id accessibility_action_clickable_span 0x7f080011
 int id accessibility_custom_action_0 0x7f080012
@@ -3231,7 +3230,6 @@ int id auto 0x7f080058
 int id autoComplete 0x7f080059
 int id autoCompleteToEnd 0x7f08005a
 int id autoCompleteToStart 0x7f08005b
-int id back 0x7f080219
 int id barrier 0x7f08005d
 int id baseline 0x7f08005e
 int id beginOnFirstDraw 0x7f08005f
@@ -3243,7 +3241,6 @@ int id bounce 0x7f080064
 int id bounceBoth 0x7f080065
 int id bounceEnd 0x7f080066
 int id bounceStart 0x7f080067
-int id button 0x7f080068
 int id buttonPanel 0x7f08006f
 int id cache_measures 0x7f080070
 int id callMeasure 0x7f080071
@@ -3324,6 +3321,8 @@ int id edit_query 0x7f0800be
 int id edit_text_id 0x7f0800bf
 int id elastic 0x7f0800c0
 int id embed 0x7f0800c1
+int id encyclo_back 0x7f0800c2
+int id encyclopedia_button 0x7f0800c3
 int id end 0x7f0800c4
 int id endToStart 0x7f0800c5
 int id enterAlways 0x7f0800c6
@@ -3491,9 +3490,6 @@ int id open_search_view_search_prefix 0x7f080167
 int id open_search_view_status_bar_spacer 0x7f080168
 int id open_search_view_toolbar 0x7f080169
 int id open_search_view_toolbar_container 0x7f08016a
-int id option1Button 0x7f08016b
-int id option2Button 0x7f08016c
-int id option3Button 0x7f08016d
 int id outline 0x7f08016e
 int id outward 0x7f08016f
 int id overshoot 0x7f080170
@@ -3780,7 +3776,6 @@ int layout abc_tooltip 0x7f0b001b
 int layout activity_gemini_class 0x7f0b001d
 int layout activity_google_maps_activity 0x7f0b001f
 int layout activity_main 0x7f0b0020
-int layout activity_trivia 0x7f0b0021
 int layout custom_dialog 0x7f0b0024
 int layout design_bottom_navigation_item 0x7f0b0025
 int layout design_bottom_sheet_dialog 0x7f0b0026
