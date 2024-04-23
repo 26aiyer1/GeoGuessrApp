@@ -32,7 +32,6 @@ public class GeoActivity extends AppCompatActivity {
 
     ArrayList<GeoList> geoList = new ArrayList<>();
 
-    String city_holder = "";
 
     @SuppressLint({"SetTextI18n", "MissingInflatedId"})
     @Override
