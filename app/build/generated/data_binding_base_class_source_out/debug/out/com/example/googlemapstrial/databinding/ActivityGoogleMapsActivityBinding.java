@@ -22,10 +22,10 @@ public final class ActivityGoogleMapsActivityBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView country;
+  public final Button back;
 
   @NonNull
-  public final Button encycloBack;
+  public final TextView country;
 
   @NonNull
   public final Button genQuestion;
@@ -34,11 +34,11 @@ public final class ActivityGoogleMapsActivityBinding implements ViewBinding {
   public final FragmentContainerView idMap;
 
   private ActivityGoogleMapsActivityBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView country, @NonNull Button encycloBack, @NonNull Button genQuestion,
+      @NonNull Button back, @NonNull TextView country, @NonNull Button genQuestion,
       @NonNull FragmentContainerView idMap) {
     this.rootView = rootView;
+    this.back = back;
     this.country = country;
-    this.encycloBack = encycloBack;
     this.genQuestion = genQuestion;
     this.idMap = idMap;
   }
@@ -70,15 +70,15 @@ public final class ActivityGoogleMapsActivityBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.country;
-      TextView country = ViewBindings.findChildViewById(rootView, id);
-      if (country == null) {
+      id = R.id.back;
+      Button back = ViewBindings.findChildViewById(rootView, id);
+      if (back == null) {
         break missingId;
       }
 
-      id = R.id.encyclo_back;
-      Button encycloBack = ViewBindings.findChildViewById(rootView, id);
-      if (encycloBack == null) {
+      id = R.id.country;
+      TextView country = ViewBindings.findChildViewById(rootView, id);
+      if (country == null) {
         break missingId;
       }
 
@@ -94,8 +94,8 @@ public final class ActivityGoogleMapsActivityBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityGoogleMapsActivityBinding((ConstraintLayout) rootView, country,
-          encycloBack, genQuestion, idMap);
+      return new ActivityGoogleMapsActivityBinding((ConstraintLayout) rootView, back, country,
+          genQuestion, idMap);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

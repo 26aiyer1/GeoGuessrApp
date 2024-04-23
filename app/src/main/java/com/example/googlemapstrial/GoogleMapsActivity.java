@@ -102,7 +102,7 @@ public class GoogleMapsActivity extends AppCompatActivity implements OnMapReadyC
         GenerativeModelFutures model = GenerativeModelFutures.from(gm);
 
         Content content = new Content.Builder()
-                .addText("Name any country in the world. Just say the name of the country.")
+                .addText("Name a random country in the world with each one having equal chances of being selected. Just say the name of the country.")
                 .build();
 
 

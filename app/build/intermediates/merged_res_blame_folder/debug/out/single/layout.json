@@ -1,34 +1,18 @@
 [
     {
-        "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.0/com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_main.xml",
-        "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.0/com.example.googlemapstrial.app-main-36:/layout/activity_main.xml"
+        "merged": "com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_trivia.xml",
+        "source": "com.example.googlemapstrial.app-main-36:/layout/activity_trivia.xml"
     },
     {
-        "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.0/com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_trivia.xml",
-        "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.0/com.example.googlemapstrial.app-main-36:/layout/activity_trivia.xml"
+        "merged": "com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_google_maps_activity.xml",
+        "source": "com.example.googlemapstrial.app-main-36:/layout/activity_google_maps_activity.xml"
     },
     {
-        "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.0/com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_geo.xml",
-        "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.0/com.example.googlemapstrial.app-main-36:/layout/activity_geo.xml"
+        "merged": "com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_gemini_class.xml",
+        "source": "com.example.googlemapstrial.app-main-36:/layout/activity_gemini_class.xml"
     },
     {
-        "merged": "com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_encyclopedia.xml",
-        "source": "com.example.googlemapstrial.app-main-36:/layout/activity_encyclopedia.xml"
-    },
-    {
-        "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.0/com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_google_maps_activity.xml",
-        "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.0/com.example.googlemapstrial.app-main-36:/layout/activity_google_maps_activity.xml"
-    },
-    {
-        "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.0/com.example.googlemapstrial.app-mergeDebugResources-33:/layout/card_design.xml",
-        "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.0/com.example.googlemapstrial.app-main-36:/layout/card_design.xml"
-    },
-    {
-        "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.0/com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_encyclopedia.xml",
-        "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.0/com.example.googlemapstrial.app-main-36:/layout/activity_encyclopedia.xml"
-    },
-    {
-        "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.0/com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_gemini_class.xml",
-        "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.0/com.example.googlemapstrial.app-main-36:/layout/activity_gemini_class.xml"
+        "merged": "com.example.googlemapstrial.app-mergeDebugResources-33:/layout/activity_main.xml",
+        "source": "com.example.googlemapstrial.app-main-36:/layout/activity_main.xml"
     }
 ]
