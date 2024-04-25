@@ -1,6 +1,7 @@
 package com.example.googlemapstrial;
 
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -39,15 +40,26 @@ public class MainActivity extends AppCompatActivity {
 
         intent = new Intent(MainActivity.this,GoogleMapsActivity.class);
 
-        i = new Intent(MainActivity.this, GeminiClass.class);
+        /*i = new Intent(MainActivity.this, GeminiClass.class);*/
+
+        i = new Intent(MainActivity.this, TriviaGames.class);
 
         i2 = new Intent(MainActivity.this, GeoMain.class);
+
+
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(intent);
             }
         });
+
+        /*aiButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(i);
+            }
+        });*/
 
         aiButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i2);
             }
         });
-
 
     }
 

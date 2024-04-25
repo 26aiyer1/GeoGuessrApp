@@ -20,12 +20,14 @@
         android:theme="@style/Theme.GoogleMapsTrial"
         tools:targetApi="33">
         <activity
+            android:name=".TriviaGames"
+            android:exported="false" />
+        <activity
             android:name=".GeoActivity"
             android:exported="false" />
-
-        <activity android:name=".GeoMain"
-            android:exported="false"/>
-
+        <activity
+            android:name=".GeoMain"
+            android:exported="false" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
