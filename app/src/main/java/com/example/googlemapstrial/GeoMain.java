@@ -8,7 +8,7 @@ import android.annotation.SuppressLint;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.*;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -33,12 +33,15 @@ public class GeoMain extends AppCompatActivity {
 
     Intent toMain;
 
+    Button b;
+
 
     @SuppressLint({"MissingInflatedId", "SetTextI18n"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geo_main);
+        b = findViewById(R.id.backGo);
         recyclerView = findViewById(R.id.RecyclerView);
         score = findViewById(R.id.score);
 
@@ -47,6 +50,13 @@ public class GeoMain extends AppCompatActivity {
         recyclerAdapter = new RecyclerAdapter(geoList, GeoMain.this);
         recyclerView.setAdapter(recyclerAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(GeoMain.this));
+
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(toMain);
+            }
+        });
 
 
 

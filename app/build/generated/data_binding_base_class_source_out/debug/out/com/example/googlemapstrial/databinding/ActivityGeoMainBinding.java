@@ -4,6 +4,7 @@ package com.example.googlemapstrial.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,12 +25,16 @@ public final class ActivityGeoMainBinding implements ViewBinding {
   public final RecyclerView RecyclerView;
 
   @NonNull
+  public final Button backGo;
+
+  @NonNull
   public final TextView score;
 
   private ActivityGeoMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView RecyclerView, @NonNull TextView score) {
+      @NonNull RecyclerView RecyclerView, @NonNull Button backGo, @NonNull TextView score) {
     this.rootView = rootView;
     this.RecyclerView = RecyclerView;
+    this.backGo = backGo;
     this.score = score;
   }
 
@@ -66,13 +71,19 @@ public final class ActivityGeoMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.backGo;
+      Button backGo = ViewBindings.findChildViewById(rootView, id);
+      if (backGo == null) {
+        break missingId;
+      }
+
       id = R.id.score;
       TextView score = ViewBindings.findChildViewById(rootView, id);
       if (score == null) {
         break missingId;
       }
 
-      return new ActivityGeoMainBinding((ConstraintLayout) rootView, RecyclerView, score);
+      return new ActivityGeoMainBinding((ConstraintLayout) rootView, RecyclerView, backGo, score);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

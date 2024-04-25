@@ -6,6 +6,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 id RecyclerView
 id aibutton
+id backGo
 id backed
 id capitalName
 id cardView
