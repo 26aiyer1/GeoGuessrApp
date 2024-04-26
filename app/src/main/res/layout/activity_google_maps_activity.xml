@@ -44,11 +44,11 @@
 
     <TextView
         android:id="@+id/country"
-        android:layout_width="353dp"
-        android:layout_height="87dp"
-        android:text="Country will appear here"
+        android:layout_width="359dp"
+        android:layout_height="100dp"
+        android:text="Generate a Country by clicking on 'Generate Country'"
         android:textAlignment="center"
-        android:textSize="40sp"
+        android:textSize="27.5sp"
         app:layout_constraintBottom_toTopOf="@+id/genQuestion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

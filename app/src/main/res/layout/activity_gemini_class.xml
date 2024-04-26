@@ -10,14 +10,15 @@
         android:id="@+id/geminitext"
         android:layout_width="340dp"
         android:layout_height="84dp"
-        android:text="The question will display here."
+        android:text="Generate a Question by clicking on 'New Question'"
+        android:textAlignment="center"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.084" />
+        app:layout_constraintVertical_bias="0.089" />
 
     <Button
         android:id="@+id/goBack"
@@ -26,41 +27,46 @@
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/geminitext"
-        app:layout_constraintVertical_bias="0.831" />
+        app:layout_constraintVertical_bias="0.866" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editText"
-        android:layout_width="384dp"
-        android:layout_height="50dp"
+        android:layout_width="280dp"
+        android:layout_height="53dp"
         android:hint="Enter prompt here:"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintHorizontal_bias="0.102"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.305" />
+        app:layout_constraintVertical_bias="0.307" />
 
     <Button
         android:id="@+id/testsubmit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="96dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="472dp"
         android:text="Submit"
-        app:layout_constraintBottom_toTopOf="@+id/goBack"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.354" />
+        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/geminitext" />
 
     <Button
         android:id="@+id/testgenerate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Generate new Question"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="282dp"
+        android:text="New Question"
         app:layout_constraintBottom_toTopOf="@+id/goBack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/testsubmit" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

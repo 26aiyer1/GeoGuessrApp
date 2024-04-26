@@ -19,11 +19,11 @@ public class MainActivity extends AppCompatActivity {
     Button aiButton;
 
     Button encyclopediaButton;
-    Intent intent;
+    Intent maps;
 
-    Intent i;
+    Intent trivia;
 
-    Intent i2;
+    Intent geo;
 
 
     @SuppressLint("MissingInflatedId")
@@ -38,19 +38,19 @@ public class MainActivity extends AppCompatActivity {
 
         encyclopediaButton = findViewById(R.id.encyclopedia_button);
 
-        intent = new Intent(MainActivity.this,GoogleMapsActivity.class);
+        maps = new Intent(MainActivity.this,GoogleMapsActivity.class);
 
         /*i = new Intent(MainActivity.this, GeminiClass.class);*/
 
-        i = new Intent(MainActivity.this, TriviaGames.class);
+        trivia = new Intent(MainActivity.this, TriviaGames.class);
 
-        i2 = new Intent(MainActivity.this, GeoMain.class);
+        geo = new Intent(MainActivity.this, GeoMain.class);
 
 
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(intent);
+                startActivity(maps);
             }
         });
 
@@ -64,14 +64,14 @@ public class MainActivity extends AppCompatActivity {
         aiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(i);
+                startActivity(trivia);
             }
         });
 
         encyclopediaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(i2);
+                startActivity(geo);
             }
         });
 
