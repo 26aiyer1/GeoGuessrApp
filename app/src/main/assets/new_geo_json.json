@@ -1,5 +1,4 @@
-{
-  "nations": [
+[
     {
       "country": "Afghanistan",
       "city": "Kabul"
@@ -980,5 +979,4 @@
       "country": "Zimbabwe",
       "city": "Harare"
     }
-  ]
-}
+]

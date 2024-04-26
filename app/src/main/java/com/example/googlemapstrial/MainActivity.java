@@ -44,7 +44,15 @@ public class MainActivity extends AppCompatActivity {
 
         trivia = new Intent(MainActivity.this, TriviaGames.class);
 
-        geo = new Intent(MainActivity.this, GeoMain.class);
+        System.out.println("Beginning intent to move to encyclopedia");
+        try {
+            geo = new Intent(this, GeoMain.class);
+        }
+        catch (Exception e)
+        {
+            System.out.println("Intent failed. Issue unknown");
+        }
+        System.out.println("Intent to move to encyclopedia works.");
 
 
         startButton.setOnClickListener(new View.OnClickListener() {

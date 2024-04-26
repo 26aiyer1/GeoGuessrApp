@@ -41,6 +41,9 @@ public class GeoMain extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geo_main);
+
+        Intent reciever = getIntent();
+
         b = findViewById(R.id.backGo);
         recyclerView = findViewById(R.id.RecyclerView);
         score = findViewById(R.id.score);
@@ -67,7 +70,7 @@ public class GeoMain extends AppCompatActivity {
             setUpGeoArrays(obj);
 
         } catch (JSONException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
         score.setText("Encyclopedia");
@@ -92,18 +95,21 @@ public class GeoMain extends AppCompatActivity {
     }
 
     public String loadJSONFromAsset() {
-        String json;
+        String json = "";
         try {
             InputStream is = getAssets().open("new_geo_json.json");
             int size = is.available();
             byte[] buffer = new byte[size];
+            System.out.println(buffer);
             is.read(buffer);
             is.close();
+            System.out.println("file read, parsing data");
             json = new String(buffer, StandardCharsets.UTF_8);
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
+        System.out.println("file parsed");
         return json;
     }
 }

@@ -2,9 +2,6 @@ package com.example.googlemapstrial;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,7 +17,6 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.Arrays;
 
 
 public class TriviaGames extends AppCompatActivity {
@@ -41,7 +37,7 @@ public class TriviaGames extends AppCompatActivity {
 
         generateNations();
 
-        triviaGameTextView = findViewById(R.id.textView);
+        triviaGameTextView = findViewById(R.id.Question);
         buttonA = findViewById(R.id.button2);
         buttonB = findViewById(R.id.button3);
         buttonC = findViewById(R.id.button4);
