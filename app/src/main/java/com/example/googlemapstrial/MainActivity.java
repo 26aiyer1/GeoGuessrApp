@@ -16,9 +16,10 @@ public class MainActivity extends AppCompatActivity {
 
     Button startButton;
 
-    Button aiButton;
+    Button triviaButton;
 
     Button encyclopediaButton;
+
     Intent maps;
 
     Intent trivia;
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         startButton = findViewById(R.id.startButton);
 
-        aiButton = findViewById(R.id.aibutton);
+        triviaButton = findViewById(R.id.triviaButton);
 
         encyclopediaButton = findViewById(R.id.encyclopedia_button);
 
@@ -42,7 +43,16 @@ public class MainActivity extends AppCompatActivity {
 
         /*i = new Intent(MainActivity.this, GeminiClass.class);*/
 
-        trivia = new Intent(MainActivity.this, TriviaGames.class);
+        System.out.println("Beginning intent to move to Trivia");
+        try {
+            trivia = new Intent(this, TriviaGames.class);
+        }
+        catch (Exception e)
+        {
+            System.out.println("Intent failed. Issue unknown");
+        }
+        System.out.println("Intent to move to Trivia works.");
+
 
         System.out.println("Beginning intent to move to encyclopedia");
         try {
@@ -62,14 +72,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*aiButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(i);
-            }
-        });*/
 
-        aiButton.setOnClickListener(new View.OnClickListener() {
+        triviaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(trivia);

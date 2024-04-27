@@ -2,6 +2,7 @@ package com.example.googlemapstrial;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,12 +29,16 @@ public class TriviaGames extends AppCompatActivity {
     Button buttonD;
     Button backButton;
     Button nextButton;
+
+    Intent back;
     private ArrayList<Nation> allNations = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trivia_games);
+
+        Intent receiver = getIntent();
 
         generateNations();
 
@@ -44,6 +49,7 @@ public class TriviaGames extends AppCompatActivity {
         buttonD = findViewById(R.id.button5);
         backButton = findViewById(R.id.button6);
         nextButton = findViewById(R.id.button7);
+        back = new Intent(this, MainActivity.class);
 
         // Create a Random object
         Random random = new Random();
@@ -106,16 +112,16 @@ public class TriviaGames extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+               startActivity(back);
             }
         });
     }
 
-    //this method reads movie data from a JSON file in the assets folder, parses the data, and creates Movie objects for each entry
+    //this method reads data from a JSON file in the assets folder, parses the data, and creates Movie objects for each entry
     private void generateNations () {
         try {
             //load JSON data from the assets folder
-            String json = loadJsonFromAsset();
+            String json = loadJSONFromAsset();
             //create a JSONObject from the JSON string
             JSONObject jsonObject = new JSONObject(json);
             //get the JSONArray containing nation objects
@@ -126,9 +132,9 @@ public class TriviaGames extends AppCompatActivity {
                 // Get a single nation object from the array
                 JSONObject nationObject = nationObjects.getJSONObject(i);
                 //extract country name from the JSON object
-                String country = nationObject.optString("country");
+                String country = nationObject.getString("country");
                 //extract capital city
-                String city = nationObject.optString("city");
+                String city = nationObject.getString("city");
                 //create a nation object using the extracted information
                 Nation nation = new Nation(country, city);
                 allNations.add(nation);
@@ -139,22 +145,22 @@ public class TriviaGames extends AppCompatActivity {
     }
 
     //this method reads and loads JSON data from a file in the assets folder
-    private String loadJsonFromAsset () {
-        String json;
+    public String loadJSONFromAsset() {
+        String json = "";
         try {
-            //open an InputStream to read the JSON file
             InputStream is = getAssets().open("new_geo_json.json");
             int size = is.available();
-            //create a byte array to store the file content
             byte[] buffer = new byte[size];
+            System.out.println(buffer);
             is.read(buffer);
             is.close();
-            //convert the byte array to a String using UTF-8 encoding
+            System.out.println("file read, parsing data");
             json = new String(buffer, StandardCharsets.UTF_8);
+
         } catch (IOException e) {
             e.printStackTrace();
-            return null;
         }
+        System.out.println("file parsed");
         return json;
     }
 }
