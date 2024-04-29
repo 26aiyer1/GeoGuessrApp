@@ -20,11 +20,15 @@ public class MainActivity extends AppCompatActivity {
 
     Button encyclopediaButton;
 
+    Button creditsScreen;
+
     Intent maps;
 
     Intent trivia;
 
     Intent geo;
+
+    Intent credits;
 
 
     @SuppressLint("MissingInflatedId")
@@ -38,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         triviaButton = findViewById(R.id.triviaButton);
 
         encyclopediaButton = findViewById(R.id.encyclopedia_button);
+
+        creditsScreen = findViewById(R.id.creditsScreenButton);
 
         maps = new Intent(MainActivity.this,GoogleMapsActivity.class);
 
@@ -64,6 +70,16 @@ public class MainActivity extends AppCompatActivity {
         }
         System.out.println("Intent to move to encyclopedia works.");
 
+        System.out.println("Beginning intent to move to Credits screen");
+        try {
+            credits = new Intent(this, CreditsScreen.class);
+        }
+        catch (Exception e)
+        {
+            System.out.println("Intent failed. Issue unknown");
+        }
+        System.out.println("Intent to move to credits screen works.");
+
 
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,6 +100,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(geo);
+            }
+        });
+
+        creditsScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(credits);
             }
         });
 
