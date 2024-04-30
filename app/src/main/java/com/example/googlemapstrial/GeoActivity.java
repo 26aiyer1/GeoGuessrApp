@@ -1,78 +1,77 @@
 package com.example.googlemapstrial;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Random;
 
-
+/**
+ * GeoActivity class represents the activity displaying information about a specific country and its capital.
+ */
 public class GeoActivity extends AppCompatActivity {
 
-    TextView countryName;
-
-    TextView capitalName;
-
-    Button back;
-
-    ArrayList<GeoList> geoList = new ArrayList<>();
-
-    String city_holder = "";
+    private TextView countryName;
+    private TextView capitalName;
+    private Button back;
+    private ArrayList<GeoList> geoList = new ArrayList<>();
 
     @SuppressLint({"SetTextI18n", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geo);
+
+        // Initialize UI elements
         countryName = findViewById(R.id.countryName);
         capitalName = findViewById(R.id.capitalName);
         back = findViewById(R.id.backed);
 
+        // Load JSON data from asset file
         String temp = loadJSONFromAsset();
 
+        // Parse JSON data and set up GeoList array
         try {
             JSONArray obj = new JSONArray(temp);
             setUpGeoArrays(obj);
-
         } catch (JSONException e) {
             throw new RuntimeException(e);
         }
 
+        // Retrieve country and city information from intent
         String country = getIntent().getStringExtra("country");
         String city = getIntent().getStringExtra("city");
 
+        // Initialize intent to return to GeoMain activity
         Intent intent = new Intent(GeoActivity.this, GeoMain.class);
 
-        countryName.setText("Country: "+country);
-        capitalName.setText("Capital: "+city);
+        // Display country and capital information
+        countryName.setText("Country: " + country);
+        capitalName.setText("Capital: " + city);
 
-
-
-
+        // Set onClick listener for back button
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(intent);
             }
         });
-
-
     }
 
+    /**
+     * Parse the JSON array and populate the GeoList array with country-city pairs.
+     *
+     * @param obj The JSON array containing country-city pairs.
+     */
     public void setUpGeoArrays(JSONArray obj) {
         for (int i = 0; i < obj.length(); i++) {
             try {
@@ -81,14 +80,17 @@ public class GeoActivity extends AppCompatActivity {
                 String city = entry.getString("city");
                 GeoList geoItem = new GeoList(country, city);
                 geoList.add(geoItem);
-            }
-            catch (JSONException e) {
+            } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
-
     }
 
+    /**
+     * Load JSON data from the asset file.
+     *
+     * @return The JSON data as a string.
+     */
     private String loadJSONFromAsset() {
         String json;
         try {

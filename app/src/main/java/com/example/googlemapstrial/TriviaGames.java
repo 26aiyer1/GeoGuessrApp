@@ -1,7 +1,6 @@
 package com.example.googlemapstrial;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,11 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
@@ -22,36 +19,47 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Arrays;
 
-
+/**
+ * TriviaGames class represents the activity for the trivia game.
+ * It displays a question with multiple-choice answers and checks if the selected answer is correct.
+ */
 public class TriviaGames extends AppCompatActivity {
 
+    /** TextView for displaying the trivia question. */
     TextView triviaGameTextView;
-    Button buttonA;
-    Button buttonB;
-    Button buttonC;
-    Button buttonD;
-    Button backButton;
-    Button nextButton;
 
+    /** Buttons for multiple-choice answers. */
+    Button buttonA, buttonB, buttonC, buttonD;
+
+    /** Buttons for navigating to the next question or returning to the previous screen. */
+    Button backButton, nextButton;
+
+    /** The first nation for the current trivia question. */
     GeoList firstNation;
 
+    /** List of all nations loaded from JSON. */
     private ArrayList<GeoList> allNations = new ArrayList<>();
 
+    /**
+     * Called when the activity is starting. This is where most initialization should go.
+     *
+     * @param savedInstanceState If the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied in onSaveInstanceState(Bundle).
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trivia_games);
 
+        // Load nations from JSON file
         String temp = loadJSONFromAsset();
-
         try {
             JSONArray obj = new JSONArray(temp);
             setUpGeoArrays(obj);
-
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
+        // Initialize views and buttons
         triviaGameTextView = findViewById(R.id.textView);
         buttonA = findViewById(R.id.button2);
         buttonB = findViewById(R.id.button3);
@@ -60,151 +68,134 @@ public class TriviaGames extends AppCompatActivity {
         backButton = findViewById(R.id.button6);
         nextButton = findViewById(R.id.button7);
 
+        // Generate a random question
+        generateQuestion();
 
+        // Set click listeners for answer buttons
+        setAnswerButtonListeners();
+
+        // Set click listener for the next button
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Generate a new random question
+                generateQuestion();
+            }
+        });
+
+        // Set click listener for the back button
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Finish the activity and return to the previous screen
+                finish();
+            }
+        });
+    }
+
+    /**
+     * Generates a random question with multiple-choice answers.
+     */
+    private void generateQuestion() {
         Random random = new Random();
-
         int randomNumber = random.nextInt(245);
-        int rand = random.nextInt(4)+1;
+        int rand = random.nextInt(4) + 1;
 
+        // Get a random nation as the firstNation
         firstNation = allNations.get(randomNumber);
 
-        if(rand == 1){
-            triviaGameTextView.setText(firstNation.getCountry());
-            buttonA.setText(allNations.get(random.nextInt(245)).getCity());
-            buttonB.setText(allNations.get(random.nextInt(245)).getCity());
-            buttonC.setText(firstNation.getCity());
-            buttonD.setText(allNations.get(random.nextInt(245)).getCity());
-        }
+        // Display the country name as the question and set random cities as answer choices
+        displayQuestionAndAnswers(firstNation, rand);
+    }
 
-        else if(rand == 2){
-            triviaGameTextView.setText(firstNation.getCountry());
-            buttonA.setText(firstNation.getCity());
-            buttonB.setText(allNations.get(random.nextInt(245)).getCity());
-            buttonC.setText(allNations.get(random.nextInt(245)).getCity());
-            buttonD.setText(allNations.get(random.nextInt(245)).getCity());
+    /**
+     * Displays the trivia question and sets the multiple-choice answers.
+     *
+     * @param firstNation The first nation for the question.
+     * @param rand The random number to determine the order of the answers.
+     */
+    private void displayQuestionAndAnswers(GeoList firstNation, int rand) {
+        triviaGameTextView.setText(firstNation.getCountry());
+        Random random = new Random();
+        switch (rand) {
+            case 1:
+                buttonA.setText(allNations.get(random.nextInt(245)).getCity());
+                buttonB.setText(allNations.get(random.nextInt(245)).getCity());
+                buttonC.setText(firstNation.getCity());
+                buttonD.setText(allNations.get(random.nextInt(245)).getCity());
+                break;
+            case 2:
+                buttonA.setText(firstNation.getCity());
+                buttonB.setText(allNations.get(random.nextInt(245)).getCity());
+                buttonC.setText(allNations.get(random.nextInt(245)).getCity());
+                buttonD.setText(allNations.get(random.nextInt(245)).getCity());
+                break;
+            case 3:
+                buttonA.setText(allNations.get(random.nextInt(245)).getCity());
+                buttonB.setText(allNations.get(random.nextInt(245)).getCity());
+                buttonC.setText(allNations.get(random.nextInt(245)).getCity());
+                buttonD.setText(firstNation.getCity());
+                break;
+            default:
+                buttonA.setText(allNations.get(random.nextInt(245)).getCity());
+                buttonB.setText(firstNation.getCity());
+                buttonC.setText(allNations.get(random.nextInt(245)).getCity());
+                buttonD.setText(allNations.get(random.nextInt(245)).getCity());
+                break;
         }
-        else if(rand == 3){
-            triviaGameTextView.setText(firstNation.getCountry());
-            buttonA.setText(allNations.get(random.nextInt(245)).getCity());
-            buttonB.setText(allNations.get(random.nextInt(245)).getCity());
-            buttonC.setText(allNations.get(random.nextInt(245)).getCity());
-            buttonD.setText(firstNation.getCity());
-        }
-        else{
-            triviaGameTextView.setText(firstNation.getCountry());
-            buttonA.setText(allNations.get(random.nextInt(245)).getCity());
-            buttonB.setText(firstNation.getCity());
-            buttonC.setText(allNations.get(random.nextInt(245)).getCity());
-            buttonD.setText(allNations.get(random.nextInt(245)).getCity());
-        }
+    }
 
-
-
+    /**
+     * Sets the click listeners for the answer buttons.
+     */
+    private void setAnswerButtonListeners() {
         buttonA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(buttonA.getText().toString().equals(firstNation.getCity())){
-                    Toast.makeText(TriviaGames.this, "Correct!", Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    Toast.makeText(TriviaGames.this, "Wrong!", Toast.LENGTH_SHORT).show();
-                }
-
+                checkAnswer(buttonA.getText().toString());
             }
         });
 
         buttonB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(buttonB.getText().toString().equals(firstNation.getCity())){
-                    Toast.makeText(TriviaGames.this, "Correct!", Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    Toast.makeText(TriviaGames.this, "Wrong!", Toast.LENGTH_SHORT).show();
-                }
-
+                checkAnswer(buttonB.getText().toString());
             }
         });
 
         buttonC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(buttonC.getText().toString().equals(firstNation.getCity())){
-                    Toast.makeText(TriviaGames.this, "Correct!", Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    Toast.makeText(TriviaGames.this, "Wrong!", Toast.LENGTH_SHORT).show();
-                }
-
+                checkAnswer(buttonC.getText().toString());
             }
         });
 
         buttonD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(buttonD.getText().toString().equals(firstNation.getCity())){
-                    Toast.makeText(TriviaGames.this, "Correct!", Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    Toast.makeText(TriviaGames.this, "Wrong!", Toast.LENGTH_SHORT).show();
-                }
-
-            }
-        });
-
-        nextButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Random random = new Random();
-                int randomNumber = random.nextInt(245);
-                int rand = random.nextInt(4)+1;
-
-                firstNation = allNations.get(randomNumber);
-
-                if(rand == 1){
-                    triviaGameTextView.setText(firstNation.getCountry());
-                    buttonA.setText(allNations.get(random.nextInt(245)).getCity());
-                    buttonB.setText(allNations.get(random.nextInt(245)).getCity());
-                    buttonC.setText(firstNation.getCity());
-                    buttonD.setText(allNations.get(random.nextInt(245)).getCity());
-                }
-
-                else if(rand == 2){
-                    triviaGameTextView.setText(firstNation.getCountry());
-                    buttonA.setText(firstNation.getCity());
-                    buttonB.setText(allNations.get(random.nextInt(245)).getCity());
-                    buttonC.setText(allNations.get(random.nextInt(245)).getCity());
-                    buttonD.setText(allNations.get(random.nextInt(245)).getCity());
-                }
-                else if(rand == 3){
-                    triviaGameTextView.setText(firstNation.getCountry());
-                    buttonA.setText(allNations.get(random.nextInt(245)).getCity());
-                    buttonB.setText(allNations.get(random.nextInt(245)).getCity());
-                    buttonC.setText(allNations.get(random.nextInt(245)).getCity());
-                    buttonD.setText(firstNation.getCity());
-                }
-                else{
-                    triviaGameTextView.setText(firstNation.getCountry());
-                    buttonA.setText(allNations.get(random.nextInt(245)).getCity());
-                    buttonB.setText(firstNation.getCity());
-                    buttonC.setText(allNations.get(random.nextInt(245)).getCity());
-                    buttonD.setText(allNations.get(random.nextInt(245)).getCity());
-                }
-
-            }
-        });
-
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
+                checkAnswer(buttonD.getText().toString());
             }
         });
     }
 
+    /**
+     * Checks if the selected answer is correct and displays a toast message.
+     *
+     * @param selectedAnswer The text of the selected answer button.
+     */
+    private void checkAnswer(String selectedAnswer) {
+        if (selectedAnswer.equals(firstNation.getCity())) {
+            Toast.makeText(TriviaGames.this, "Correct!", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(TriviaGames.this, "Wrong!", Toast.LENGTH_SHORT).show();
+        }
+    }
 
-
-
+    /**
+     * Sets up the list of GeoList items from the JSON array.
+     *
+     * @param obj The JSON array containing country-city pairs.
+     */
     public void setUpGeoArrays(JSONArray obj) {
         for (int i = 0; i < obj.length(); i++) {
             try {
@@ -213,17 +204,19 @@ public class TriviaGames extends AppCompatActivity {
                 String city = entry.getString("city");
                 GeoList geoItem = new GeoList(country, city);
                 allNations.add(geoItem);
-            }
-            catch (JSONException e) {
+            } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
-
     }
 
-
-    private String loadJSONFromAsset () {
-        String json;
+    /**
+     * Loads JSON data from the assets folder.
+     *
+     * @return The JSON data as a string.
+     */
+    private String loadJSONFromAsset() {
+        String json = "";
         try {
             InputStream is = getAssets().open("new_geo_json.json");
             int size = is.available();
@@ -233,7 +226,6 @@ public class TriviaGames extends AppCompatActivity {
             json = new String(buffer, StandardCharsets.UTF_8);
         } catch (IOException e) {
             e.printStackTrace();
-            return null;
         }
         return json;
     }
