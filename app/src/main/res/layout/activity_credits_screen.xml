@@ -36,4 +36,12 @@
         android:text="Adrian Tsian - Developer of Trivia Game"
         android:textSize="18sp" />
 
+    <Button
+        android:id="@+id/backFromCreditsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
 </LinearLayout>
