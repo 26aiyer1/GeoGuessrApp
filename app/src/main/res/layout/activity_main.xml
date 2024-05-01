@@ -44,14 +44,16 @@
         android:layout_height="48dp"
         android:layout_marginStart="126dp"
         android:layout_marginEnd="126dp"
-        android:layout_marginBottom="136dp"
+        android:layout_marginBottom="116dp"
         android:text="Encyclopedia"
         android:textAlignment="center"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        app:layout_constraintVertical_bias="0.923" />
 
     <Button
         android:id="@+id/startButton"
@@ -66,6 +68,7 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/triviaButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
 
@@ -84,14 +87,14 @@
         app:srcCompat="@drawable/geo" />
 
     <Button
-        android:id="@+id/creditsScreenButton"
+        android:id="@+id/credits"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
+        android:layout_marginTop="32dp"
         android:text="Credits"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/encyclopedia_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

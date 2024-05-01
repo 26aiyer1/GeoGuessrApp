@@ -43,6 +43,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.GoogleMapsTrial" >
         <activity
+            android:name="com.example.googlemapstrial.Credits"
+            android:exported="false" />
+        <activity
+            android:name="com.example.googlemapstrial.TriviaGames"
+            android:exported="false" />
+        <activity
             android:name="com.example.googlemapstrial.GeoActivity"
             android:exported="false" />
         <activity

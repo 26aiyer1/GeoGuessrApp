@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,10 +22,13 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button aibutton;
+  public final Button credits;
 
   @NonNull
   public final Button encyclopediaButton;
+
+  @NonNull
+  public final ImageView imageView;
 
   @NonNull
   public final Button startButton;
@@ -32,14 +36,19 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final TextView titleTextView;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button aibutton,
-      @NonNull Button encyclopediaButton, @NonNull Button startButton,
-      @NonNull TextView titleTextView) {
+  @NonNull
+  public final Button triviaButton;
+
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button credits,
+      @NonNull Button encyclopediaButton, @NonNull ImageView imageView, @NonNull Button startButton,
+      @NonNull TextView titleTextView, @NonNull Button triviaButton) {
     this.rootView = rootView;
-    this.aibutton = aibutton;
+    this.credits = credits;
     this.encyclopediaButton = encyclopediaButton;
+    this.imageView = imageView;
     this.startButton = startButton;
     this.titleTextView = titleTextView;
+    this.triviaButton = triviaButton;
   }
 
   @Override
@@ -69,15 +78,21 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.aibutton;
-      Button aibutton = ViewBindings.findChildViewById(rootView, id);
-      if (aibutton == null) {
+      id = R.id.credits;
+      Button credits = ViewBindings.findChildViewById(rootView, id);
+      if (credits == null) {
         break missingId;
       }
 
       id = R.id.encyclopedia_button;
       Button encyclopediaButton = ViewBindings.findChildViewById(rootView, id);
       if (encyclopediaButton == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView;
+      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
+      if (imageView == null) {
         break missingId;
       }
 
@@ -93,8 +108,14 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, aibutton, encyclopediaButton,
-          startButton, titleTextView);
+      id = R.id.triviaButton;
+      Button triviaButton = ViewBindings.findChildViewById(rootView, id);
+      if (triviaButton == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((ConstraintLayout) rootView, credits, encyclopediaButton,
+          imageView, startButton, titleTextView, triviaButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

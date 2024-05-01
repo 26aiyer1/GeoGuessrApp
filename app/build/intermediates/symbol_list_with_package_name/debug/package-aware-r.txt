@@ -3044,6 +3044,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable geo
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_arrow_back_black_24
@@ -3148,6 +3149,7 @@ id CTRL
 id FUNCTION
 id META
 id NO_DEBUG
+id Question
 id RecyclerView
 id SHIFT
 id SHOW_ALL
@@ -3215,7 +3217,6 @@ id activity_chooser_view_content
 id add
 id adjust_height
 id adjust_width
-id aibutton
 id alertTitle
 id aligned
 id all
@@ -3232,6 +3233,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backFromCreditsButton
 id backGo
 id backed
 id barrier
@@ -3245,6 +3247,12 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id button2
+id button3
+id button4
+id button5
+id button6
+id button7
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3284,6 +3292,7 @@ id counterclockwise
 id country
 id countryName
 id cradle
+id credits
 id currentState
 id custom
 id customPanel
@@ -3381,6 +3390,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id immediateStop
 id included
 id indeterminate
@@ -3533,7 +3543,6 @@ id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
-id score
 id screen
 id scroll
 id scrollIndicatorDown
@@ -3616,6 +3625,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id textViewQuestion
 id text_input_end_icon
 id text_input_error_icon
@@ -3643,6 +3653,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id triviaButton
 id unchecked
 id uniform
 id unlabeled
@@ -3782,11 +3793,13 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_credits
 layout activity_gemini_class
 layout activity_geo
 layout activity_geo_main
 layout activity_google_maps_activity
 layout activity_main
+layout activity_trivia_games
 layout card_design
 layout custom_dialog
 layout design_bottom_navigation_item

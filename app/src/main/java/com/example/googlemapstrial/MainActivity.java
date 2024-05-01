@@ -15,11 +15,13 @@ public class MainActivity extends AppCompatActivity {
     private Button startButton;
     private Button triviaButton;
     private Button encyclopediaButton;
-    private Button creditsScreen;
+
+    Button creditsButton;
     private Intent maps;
     private Intent trivia;
     private Intent geo;
-    private Intent credits;
+
+    Intent toCredits;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -31,13 +33,13 @@ public class MainActivity extends AppCompatActivity {
         startButton = findViewById(R.id.startButton);
         triviaButton = findViewById(R.id.triviaButton);
         encyclopediaButton = findViewById(R.id.encyclopedia_button);
-        creditsScreen = findViewById(R.id.creditsScreenButton);
+        creditsButton = findViewById(R.id.credits);
 
         // Initialize intents
         maps = new Intent(MainActivity.this, GoogleMapsActivity.class);
-        trivia = new Intent(this, TriviaGames.class);
-        geo = new Intent(this, GeoMain.class);
-        credits = new Intent(this, CreditsScreen.class);
+        trivia = new Intent(MainActivity.this, TriviaGames.class);
+        geo = new Intent(MainActivity.this, GeoMain.class);
+        toCredits = new Intent(MainActivity.this, Credits.class);
 
         // Set onClick listeners for buttons
         startButton.setOnClickListener(new View.OnClickListener() {
@@ -61,11 +63,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        creditsScreen.setOnClickListener(new View.OnClickListener() {
+        creditsButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                startActivity(credits);
+            public void onClick(View v) {
+                startActivity(toCredits);
             }
         });
+
     }
 }

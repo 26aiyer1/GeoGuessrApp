@@ -35,8 +35,6 @@ public class GeoMain extends AppCompatActivity {
     /** Adapter for the RecyclerView. */
     public RecyclerAdapter recyclerAdapter;
 
-    /** TextView to display the score or title. */
-    TextView score;
 
     /** Intent to navigate back to the main activity. */
     Intent toMain;
@@ -60,7 +58,6 @@ public class GeoMain extends AppCompatActivity {
 
         b = findViewById(R.id.backGo);
         recyclerView = findViewById(R.id.RecyclerView);
-        score = findViewById(R.id.score);
 
         toMain = new Intent(GeoMain.this, MainActivity.class);
 
@@ -84,7 +81,6 @@ public class GeoMain extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        score.setText("Encyclopedia");
     }
 
     /**
