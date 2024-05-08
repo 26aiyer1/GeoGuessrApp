@@ -18,9 +18,10 @@
 
     <Button
         android:id="@+id/genQuestion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="407dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="14dp"
+        android:background="#000000"
         android:text=" Generate Country"
         app:layout_constraintBottom_toTopOf="@+id/id_map"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,6 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
+        android:background="#000000"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
