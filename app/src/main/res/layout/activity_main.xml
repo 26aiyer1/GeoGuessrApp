@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,15 +9,28 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="3dp">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="759dp"
+        android:layout_height="1167dp"
+        android:contextClickable="false"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/geo"
+        tools:layout_editor_absoluteX="-140dp"
+        tools:layout_editor_absoluteY="-96dp" />
+
     <TextView
         android:id="@+id/titleTextView"
         android:layout_width="271dp"
         android:layout_height="55dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="88dp"
+        android:background="#34608F"
+        android:backgroundTint="#B3365380"
         android:fontFamily="cursive"
         android:text="GeoGuessr App"
         android:textAlignment="center"
-        android:textColor="@android:color/black"
+        android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,64 +41,41 @@
         android:id="@+id/triviaButton"
         android:layout_width="200dp"
         android:layout_height="187dp"
-        android:layout_marginBottom="212dp"
         android:background="#000000"
         android:text="Start Trivia Game"
         android:textAlignment="center"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="332dp" />
 
     <Button
         android:id="@+id/encyclopedia_button"
         android:layout_width="200dp"
         android:layout_height="187dp"
-        android:layout_marginBottom="4dp"
         android:background="#000000"
         android:text="Encyclopedia"
         android:textAlignment="center"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteY="540dp" />
 
     <Button
         android:id="@+id/startButton"
         android:layout_width="200dp"
         android:layout_height="187dp"
-        android:layout_marginBottom="212dp"
         android:background="#000000"
         android:text="Start Map Game"
         android:textAlignment="center"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="332dp" />
 
     <Button
         android:id="@+id/credits"
         android:layout_width="200dp"
         android:layout_height="187dp"
-        android:layout_marginBottom="4dp"
         android:background="#000000"
         android:text="Credits"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="281dp"
-        android:layout_height="151dp"
-        android:layout_marginBottom="428dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/geo" />
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="540dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
