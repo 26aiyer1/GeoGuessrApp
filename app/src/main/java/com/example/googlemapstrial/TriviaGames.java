@@ -1,6 +1,8 @@
 package com.example.googlemapstrial;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -114,8 +116,9 @@ public class TriviaGames extends AppCompatActivity {
      * @param firstNation The first nation for the question.
      * @param rand The random number to determine the order of the answers.
      */
+    @SuppressLint("SetTextI18n")
     private void displayQuestionAndAnswers(GeoList firstNation, int rand) {
-        triviaGameTextView.setText(firstNation.getCountry());
+        triviaGameTextView.setText("What is the capital of " + firstNation.getCountry() + "?");
         Random random = new Random();
         switch (rand) {
             case 1:

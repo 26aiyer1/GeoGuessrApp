@@ -6,19 +6,21 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     tools:context=".MainActivity"
-    tools:layout_editor_absoluteX="0dp"
-    tools:layout_editor_absoluteY="3dp">
+    tools:layout_editor_absoluteX="2dp"
+    tools:layout_editor_absoluteY="0dp">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="759dp"
         android:layout_height="1167dp"
-        android:contextClickable="false"
-        android:cropToPadding="false"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/geo"
-        tools:layout_editor_absoluteX="-140dp"
-        tools:layout_editor_absoluteY="-96dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105"
+        app:srcCompat="@drawable/geo" />
 
     <TextView
         android:id="@+id/titleTextView"
@@ -34,48 +36,62 @@
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/triviaButton"
-        android:layout_width="200dp"
-        android:layout_height="187dp"
-        android:background="#000000"
+        android:layout_width="182dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="228dp"
+        android:background="#BAFFFFFF"
         android:text="Start Trivia Game"
         android:textAlignment="center"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="332dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/encyclopedia_button"
-        android:layout_width="200dp"
-        android:layout_height="187dp"
-        android:background="#000000"
+        android:layout_width="182dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="84dp"
+        android:background="#BAFFFFFF"
         android:text="Encyclopedia"
         android:textAlignment="center"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteY="540dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/startButton"
-        android:layout_width="200dp"
-        android:layout_height="187dp"
-        android:background="#000000"
+        android:layout_width="182dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="228dp"
+        android:background="#BAFFFFFF"
         android:text="Start Map Game"
         android:textAlignment="center"
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="332dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/credits"
-        android:layout_width="200dp"
-        android:layout_height="187dp"
-        android:background="#000000"
+        android:layout_width="182dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="84dp"
+        android:background="#BAFFFFFF"
         android:text="Credits"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="540dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
