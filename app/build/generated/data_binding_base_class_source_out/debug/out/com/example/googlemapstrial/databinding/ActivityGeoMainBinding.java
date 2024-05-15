@@ -5,7 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -28,14 +28,14 @@ public final class ActivityGeoMainBinding implements ViewBinding {
   public final Button backGo;
 
   @NonNull
-  public final TextView score;
+  public final ImageView imageView3;
 
   private ActivityGeoMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView RecyclerView, @NonNull Button backGo, @NonNull TextView score) {
+      @NonNull RecyclerView RecyclerView, @NonNull Button backGo, @NonNull ImageView imageView3) {
     this.rootView = rootView;
     this.RecyclerView = RecyclerView;
     this.backGo = backGo;
-    this.score = score;
+    this.imageView3 = imageView3;
   }
 
   @Override
@@ -77,13 +77,14 @@ public final class ActivityGeoMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.score;
-      TextView score = ViewBindings.findChildViewById(rootView, id);
-      if (score == null) {
+      id = R.id.imageView3;
+      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView3 == null) {
         break missingId;
       }
 
-      return new ActivityGeoMainBinding((ConstraintLayout) rootView, RecyclerView, backGo, score);
+      return new ActivityGeoMainBinding((ConstraintLayout) rootView, RecyclerView, backGo,
+          imageView3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

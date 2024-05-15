@@ -9,212 +9,218 @@
 9        android:targetSdkVersion="33" />
 10
 11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-11-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:5:5-7:45
-11-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:6:9-63
+11-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:5:5-7:45
+11-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:6:9-63
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:8:5-67
-12-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:8:22-64
+12-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:8:5-67
+12-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:8:22-64
 13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:9:5-79
-13-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:9:22-76
+13-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:9:5-79
+13-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:9:22-76
 14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-14-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:10:5-81
-14-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:10:22-78
+14-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:10:5-81
+14-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:10:22-78
 15
 16    <uses-feature
-16-->[com.google.android.gms:play-services-maps:18.2.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/be81fad527d01bebe38111bfe47173ec/transformed/play-services-maps-18.2.0/AndroidManifest.xml:26:5-28:35
+16-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\f7hkw\.gradle\caches\transforms-3\be81fad527d01bebe38111bfe47173ec\transformed\play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
 17        android:glEsVersion="0x00020000"
-17-->[com.google.android.gms:play-services-maps:18.2.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/be81fad527d01bebe38111bfe47173ec/transformed/play-services-maps-18.2.0/AndroidManifest.xml:27:9-41
+17-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\f7hkw\.gradle\caches\transforms-3\be81fad527d01bebe38111bfe47173ec\transformed\play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
 18        android:required="true" />
-18-->[com.google.android.gms:play-services-maps:18.2.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/be81fad527d01bebe38111bfe47173ec/transformed/play-services-maps-18.2.0/AndroidManifest.xml:28:9-32
+18-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\f7hkw\.gradle\caches\transforms-3\be81fad527d01bebe38111bfe47173ec\transformed\play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
 19
 20    <queries>
-20-->[com.google.android.gms:play-services-maps:18.2.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/be81fad527d01bebe38111bfe47173ec/transformed/play-services-maps-18.2.0/AndroidManifest.xml:30:5-34:15
+20-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\f7hkw\.gradle\caches\transforms-3\be81fad527d01bebe38111bfe47173ec\transformed\play-services-maps-18.2.0\AndroidManifest.xml:30:5-34:15
 21
 22        <!-- Needs to be explicitly declared on Android R+ -->
 23        <package android:name="com.google.android.apps.maps" />
-23-->[com.google.android.gms:play-services-maps:18.2.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/be81fad527d01bebe38111bfe47173ec/transformed/play-services-maps-18.2.0/AndroidManifest.xml:33:9-64
-23-->[com.google.android.gms:play-services-maps:18.2.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/be81fad527d01bebe38111bfe47173ec/transformed/play-services-maps-18.2.0/AndroidManifest.xml:33:18-61
+23-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\f7hkw\.gradle\caches\transforms-3\be81fad527d01bebe38111bfe47173ec\transformed\play-services-maps-18.2.0\AndroidManifest.xml:33:9-64
+23-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\f7hkw\.gradle\caches\transforms-3\be81fad527d01bebe38111bfe47173ec\transformed\play-services-maps-18.2.0\AndroidManifest.xml:33:18-61
 24    </queries>
 25
 26    <permission
-26-->[androidx.core:core:1.12.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/b20e2d3e2ffaed875635ff2fb49c3193/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+26-->[androidx.core:core:1.12.0] C:\Users\f7hkw\.gradle\caches\transforms-3\b20e2d3e2ffaed875635ff2fb49c3193\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
 27        android:name="com.example.googlemapstrial.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-27-->[androidx.core:core:1.12.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/b20e2d3e2ffaed875635ff2fb49c3193/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+27-->[androidx.core:core:1.12.0] C:\Users\f7hkw\.gradle\caches\transforms-3\b20e2d3e2ffaed875635ff2fb49c3193\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
 28        android:protectionLevel="signature" />
-28-->[androidx.core:core:1.12.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/b20e2d3e2ffaed875635ff2fb49c3193/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+28-->[androidx.core:core:1.12.0] C:\Users\f7hkw\.gradle\caches\transforms-3\b20e2d3e2ffaed875635ff2fb49c3193\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
 29
 30    <uses-permission android:name="com.example.googlemapstrial.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-30-->[androidx.core:core:1.12.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/b20e2d3e2ffaed875635ff2fb49c3193/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
-30-->[androidx.core:core:1.12.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/b20e2d3e2ffaed875635ff2fb49c3193/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+30-->[androidx.core:core:1.12.0] C:\Users\f7hkw\.gradle\caches\transforms-3\b20e2d3e2ffaed875635ff2fb49c3193\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+30-->[androidx.core:core:1.12.0] C:\Users\f7hkw\.gradle\caches\transforms-3\b20e2d3e2ffaed875635ff2fb49c3193\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
 31
 32    <application
-32-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:12:5-51:19
+32-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:12:5-54:19
 33        android:allowBackup="true"
-33-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:13:9-35
+33-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:13:9-35
 34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-34-->[androidx.core:core:1.12.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/b20e2d3e2ffaed875635ff2fb49c3193/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+34-->[androidx.core:core:1.12.0] C:\Users\f7hkw\.gradle\caches\transforms-3\b20e2d3e2ffaed875635ff2fb49c3193\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 35        android:dataExtractionRules="@xml/data_extraction_rules"
-35-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:14:9-65
+35-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:14:9-65
 36        android:debuggable="true"
 37        android:extractNativeLibs="false"
 38        android:fullBackupContent="@xml/backup_rules"
-38-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:15:9-54
+38-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:15:9-54
 39        android:icon="@mipmap/ic_launcher"
-39-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:16:9-43
+39-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:16:9-43
 40        android:label="@string/app_name"
-40-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:17:9-41
+40-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:17:9-41
 41        android:roundIcon="@mipmap/ic_launcher_round"
-41-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:18:9-54
+41-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:18:9-54
 42        android:supportsRtl="true"
-42-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:19:9-35
+42-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:19:9-35
 43        android:testOnly="true"
 44        android:theme="@style/Theme.GoogleMapsTrial" >
-44-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:20:9-53
+44-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:20:9-53
 45        <activity
-45-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:22:9-24:40
-46            android:name="com.example.googlemapstrial.TriviaGames"
-46-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:23:13-40
+45-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:22:9-24:40
+46            android:name="com.example.googlemapstrial.Credits"
+46-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:23:13-36
 47            android:exported="false" />
-47-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:24:13-37
+47-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:24:13-37
 48        <activity
-48-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:25:9-27:40
-49            android:name="com.example.googlemapstrial.GeoActivity"
-49-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:26:13-40
+48-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:25:9-27:40
+49            android:name="com.example.googlemapstrial.TriviaGames"
+49-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:26:13-40
 50            android:exported="false" />
-50-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:27:13-37
+50-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:27:13-37
 51        <activity
-51-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:28:9-30:40
-52            android:name="com.example.googlemapstrial.GeoMain"
-52-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:29:13-36
+51-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:28:9-30:40
+52            android:name="com.example.googlemapstrial.GeoActivity"
+52-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:29:13-40
 53            android:exported="false" />
-53-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:30:13-37
-54
-55        <meta-data
-55-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:32:9-34:71
-56            android:name="com.google.android.geo.API_KEY"
-56-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:33:13-58
-57            android:value="AIzaSyDRr9mAjb5Ak8jSQxn0teCi3eqPECNc6TA" />
-57-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:34:13-68
-58
-59        <activity
-59-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:36:9-38:40
-60            android:name="com.example.googlemapstrial.GeminiClass"
-60-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:37:13-40
-61            android:exported="false" />
-61-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:38:13-37
+53-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:30:13-37
+54        <activity
+54-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:31:9-33:40
+55            android:name="com.example.googlemapstrial.GeoMain"
+55-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:32:13-36
+56            android:exported="false" />
+56-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:33:13-37
+57
+58        <meta-data
+58-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:35:9-37:71
+59            android:name="com.google.android.geo.API_KEY"
+59-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:36:13-58
+60            android:value="AIzaSyDRr9mAjb5Ak8jSQxn0teCi3eqPECNc6TA" />
+60-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:37:13-68
+61
 62        <activity
-62-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:39:9-41:40
-63            android:name="com.example.googlemapstrial.GoogleMapsActivity"
-63-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:40:13-47
+62-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:39:9-41:40
+63            android:name="com.example.googlemapstrial.GeminiClass"
+63-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:40:13-40
 64            android:exported="false" />
-64-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:41:13-37
+64-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:41:13-37
 65        <activity
-65-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:42:9-50:20
-66            android:name="com.example.googlemapstrial.MainActivity"
-66-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:43:13-41
-67            android:exported="true" >
-67-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:44:13-36
-68            <intent-filter>
-68-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:45:13-49:29
-69                <action android:name="android.intent.action.MAIN" />
-69-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:46:17-69
-69-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:46:25-66
-70
-71                <category android:name="android.intent.category.LAUNCHER" />
-71-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:48:17-77
-71-->/Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:48:27-74
-72            </intent-filter>
-73        </activity>
-74        <!-- Needs to be explicitly declared on P+ -->
-75        <uses-library
-75-->[com.google.android.gms:play-services-maps:18.2.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/be81fad527d01bebe38111bfe47173ec/transformed/play-services-maps-18.2.0/AndroidManifest.xml:39:9-41:40
-76            android:name="org.apache.http.legacy"
-76-->[com.google.android.gms:play-services-maps:18.2.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/be81fad527d01bebe38111bfe47173ec/transformed/play-services-maps-18.2.0/AndroidManifest.xml:40:13-50
-77            android:required="false" />
-77-->[com.google.android.gms:play-services-maps:18.2.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/be81fad527d01bebe38111bfe47173ec/transformed/play-services-maps-18.2.0/AndroidManifest.xml:41:13-37
-78
-79        <activity
-79-->[com.google.android.gms:play-services-base:18.0.1] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/2661f6111cfbd8f856948054ea877b05/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-80            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-80-->[com.google.android.gms:play-services-base:18.0.1] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/2661f6111cfbd8f856948054ea877b05/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-81            android:exported="false"
-81-->[com.google.android.gms:play-services-base:18.0.1] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/2661f6111cfbd8f856948054ea877b05/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-82            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-82-->[com.google.android.gms:play-services-base:18.0.1] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/2661f6111cfbd8f856948054ea877b05/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-83
-84        <meta-data
-84-->[com.google.android.gms:play-services-basement:18.0.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/a1966240600e354e9df63d0363d1bb72/transformed/play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
-85            android:name="com.google.android.gms.version"
-85-->[com.google.android.gms:play-services-basement:18.0.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/a1966240600e354e9df63d0363d1bb72/transformed/play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
-86            android:value="@integer/google_play_services_version" />
-86-->[com.google.android.gms:play-services-basement:18.0.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/a1966240600e354e9df63d0363d1bb72/transformed/play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
-87
-88        <provider
-88-->[androidx.emoji2:emoji2:1.2.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/628a808bc87f369f117b0a2fe872c97a/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-89            android:name="androidx.startup.InitializationProvider"
-89-->[androidx.emoji2:emoji2:1.2.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/628a808bc87f369f117b0a2fe872c97a/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-90            android:authorities="com.example.googlemapstrial.androidx-startup"
-90-->[androidx.emoji2:emoji2:1.2.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/628a808bc87f369f117b0a2fe872c97a/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-91            android:exported="false" >
-91-->[androidx.emoji2:emoji2:1.2.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/628a808bc87f369f117b0a2fe872c97a/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-92            <meta-data
-92-->[androidx.emoji2:emoji2:1.2.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/628a808bc87f369f117b0a2fe872c97a/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-93                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-93-->[androidx.emoji2:emoji2:1.2.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/628a808bc87f369f117b0a2fe872c97a/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-94                android:value="androidx.startup" />
-94-->[androidx.emoji2:emoji2:1.2.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/628a808bc87f369f117b0a2fe872c97a/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+65-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:42:9-44:40
+66            android:name="com.example.googlemapstrial.GoogleMapsActivity"
+66-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:43:13-47
+67            android:exported="false" />
+67-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:44:13-37
+68        <activity
+68-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:45:9-53:20
+69            android:name="com.example.googlemapstrial.MainActivity"
+69-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:46:13-41
+70            android:exported="true" >
+70-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:47:13-36
+71            <intent-filter>
+71-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:48:13-52:29
+72                <action android:name="android.intent.action.MAIN" />
+72-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:49:17-69
+72-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:49:25-66
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+74-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:51:17-77
+74-->C:\Users\f7hkw\AndroidStudioProjects\GeoGuessrApp\app\src\main\AndroidManifest.xml:51:27-74
+75            </intent-filter>
+76        </activity>
+77        <!-- Needs to be explicitly declared on P+ -->
+78        <uses-library
+78-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\f7hkw\.gradle\caches\transforms-3\be81fad527d01bebe38111bfe47173ec\transformed\play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+79            android:name="org.apache.http.legacy"
+79-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\f7hkw\.gradle\caches\transforms-3\be81fad527d01bebe38111bfe47173ec\transformed\play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+80            android:required="false" />
+80-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\f7hkw\.gradle\caches\transforms-3\be81fad527d01bebe38111bfe47173ec\transformed\play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+81
+82        <activity
+82-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\f7hkw\.gradle\caches\transforms-3\2661f6111cfbd8f856948054ea877b05\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+83            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+83-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\f7hkw\.gradle\caches\transforms-3\2661f6111cfbd8f856948054ea877b05\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+84            android:exported="false"
+84-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\f7hkw\.gradle\caches\transforms-3\2661f6111cfbd8f856948054ea877b05\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+85            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+85-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\f7hkw\.gradle\caches\transforms-3\2661f6111cfbd8f856948054ea877b05\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+86
+87        <meta-data
+87-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\f7hkw\.gradle\caches\transforms-3\a1966240600e354e9df63d0363d1bb72\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+88            android:name="com.google.android.gms.version"
+88-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\f7hkw\.gradle\caches\transforms-3\a1966240600e354e9df63d0363d1bb72\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+89            android:value="@integer/google_play_services_version" />
+89-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\f7hkw\.gradle\caches\transforms-3\a1966240600e354e9df63d0363d1bb72\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+90
+91        <provider
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\f7hkw\.gradle\caches\transforms-3\628a808bc87f369f117b0a2fe872c97a\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+92            android:name="androidx.startup.InitializationProvider"
+92-->[androidx.emoji2:emoji2:1.2.0] C:\Users\f7hkw\.gradle\caches\transforms-3\628a808bc87f369f117b0a2fe872c97a\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+93            android:authorities="com.example.googlemapstrial.androidx-startup"
+93-->[androidx.emoji2:emoji2:1.2.0] C:\Users\f7hkw\.gradle\caches\transforms-3\628a808bc87f369f117b0a2fe872c97a\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+94            android:exported="false" >
+94-->[androidx.emoji2:emoji2:1.2.0] C:\Users\f7hkw\.gradle\caches\transforms-3\628a808bc87f369f117b0a2fe872c97a\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 95            <meta-data
-95-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/5f8c519c6c157050a7476a8fb90874bc/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
-96                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-96-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/5f8c519c6c157050a7476a8fb90874bc/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+95-->[androidx.emoji2:emoji2:1.2.0] C:\Users\f7hkw\.gradle\caches\transforms-3\628a808bc87f369f117b0a2fe872c97a\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+96                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+96-->[androidx.emoji2:emoji2:1.2.0] C:\Users\f7hkw\.gradle\caches\transforms-3\628a808bc87f369f117b0a2fe872c97a\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 97                android:value="androidx.startup" />
-97-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/5f8c519c6c157050a7476a8fb90874bc/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+97-->[androidx.emoji2:emoji2:1.2.0] C:\Users\f7hkw\.gradle\caches\transforms-3\628a808bc87f369f117b0a2fe872c97a\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 98            <meta-data
-98-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-99                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-99-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+98-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\f7hkw\.gradle\caches\transforms-3\5f8c519c6c157050a7476a8fb90874bc\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+99                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+99-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\f7hkw\.gradle\caches\transforms-3\5f8c519c6c157050a7476a8fb90874bc\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
 100                android:value="androidx.startup" />
-100-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-101        </provider>
-102
-103        <receiver
-103-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-104            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-104-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-105            android:directBootAware="false"
-105-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-106            android:enabled="true"
-106-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-107            android:exported="true"
-107-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-108            android:permission="android.permission.DUMP" >
-108-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-109            <intent-filter>
-109-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-110                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-110-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-110-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-111            </intent-filter>
+100-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\f7hkw\.gradle\caches\transforms-3\5f8c519c6c157050a7476a8fb90874bc\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+101            <meta-data
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+102                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+103                android:value="androidx.startup" />
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+104        </provider>
+105
+106        <receiver
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+107            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+108            android:directBootAware="false"
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+109            android:enabled="true"
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+110            android:exported="true"
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+111            android:permission="android.permission.DUMP" >
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
 112            <intent-filter>
-112-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-113                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-113-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-113-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+113                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
 114            </intent-filter>
 115            <intent-filter>
-115-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-116                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-116-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-116-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+116                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
 117            </intent-filter>
 118            <intent-filter>
-118-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-119                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-119-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-119-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/7aed78b8996c1e30c3b804cf8792b76b/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+119                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
 120            </intent-filter>
-121        </receiver>
-122    </application>
-123
-124</manifest>
+121            <intent-filter>
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+122                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\f7hkw\.gradle\caches\transforms-3\7aed78b8996c1e30c3b804cf8792b76b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+123            </intent-filter>
+124        </receiver>
+125    </application>
+126
+127</manifest>

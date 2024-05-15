@@ -3045,6 +3045,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable geo
+drawable geov
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_arrow_back_black_24
@@ -3149,7 +3150,6 @@ id CTRL
 id FUNCTION
 id META
 id NO_DEBUG
-id Question
 id RecyclerView
 id SHIFT
 id SHOW_ALL
@@ -3391,6 +3391,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView3
 id immediateStop
 id included
 id indeterminate
@@ -3626,6 +3627,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView2
 id textViewQuestion
 id text_input_end_icon
 id text_input_error_icon

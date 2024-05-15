@@ -3,9 +3,9 @@ local
 color black
 color white
 drawable geo
+drawable geov
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-id Question
 id RecyclerView
 id backFromCreditsButton
 id backGo
@@ -29,10 +29,12 @@ id genQuestion
 id goBack
 id id_map
 id imageView
+id imageView3
 id startButton
 id testgenerate
 id testsubmit
 id textView
+id textView2
 id textViewQuestion
 id titleTextView
 id triviaButton

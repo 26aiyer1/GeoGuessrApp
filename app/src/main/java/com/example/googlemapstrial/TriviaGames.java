@@ -29,6 +29,7 @@ public class TriviaGames extends AppCompatActivity {
 
     /** TextView for displaying the trivia question. */
     TextView triviaGameTextView;
+    TextView scoreTextView;
 
     /** Buttons for multiple-choice answers. */
     Button buttonA, buttonB, buttonC, buttonD;
@@ -38,6 +39,7 @@ public class TriviaGames extends AppCompatActivity {
 
     /** The first nation for the current trivia question. */
     GeoList firstNation;
+    int score;
 
     /** List of all nations loaded from JSON. */
     private ArrayList<GeoList> allNations = new ArrayList<>();
@@ -47,6 +49,7 @@ public class TriviaGames extends AppCompatActivity {
      *
      * @param savedInstanceState If the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied in onSaveInstanceState(Bundle).
      */
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +66,7 @@ public class TriviaGames extends AppCompatActivity {
 
         // Initialize views and buttons
         triviaGameTextView = findViewById(R.id.textView);
+        scoreTextView = findViewById(R.id.textView2);
         buttonA = findViewById(R.id.button2);
         buttonB = findViewById(R.id.button3);
         buttonC = findViewById(R.id.button4);
@@ -188,9 +192,13 @@ public class TriviaGames extends AppCompatActivity {
      */
     private void checkAnswer(String selectedAnswer) {
         if (selectedAnswer.equals(firstNation.getCity())) {
+            score=score+2;
             Toast.makeText(TriviaGames.this, "Correct!", Toast.LENGTH_SHORT).show();
+            scoreTextView.setText("Score: " + score);
         } else {
+            score=score-1;
             Toast.makeText(TriviaGames.this, "Wrong!", Toast.LENGTH_SHORT).show();
+            scoreTextView.setText("Score: " + score);
         }
     }
 
