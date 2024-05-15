@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -33,14 +34,18 @@ public final class ActivityGoogleMapsActivityBinding implements ViewBinding {
   @NonNull
   public final FragmentContainerView idMap;
 
+  @NonNull
+  public final ImageView imageView3;
+
   private ActivityGoogleMapsActivityBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView country, @NonNull Button encycloBack, @NonNull Button genQuestion,
-      @NonNull FragmentContainerView idMap) {
+      @NonNull FragmentContainerView idMap, @NonNull ImageView imageView3) {
     this.rootView = rootView;
     this.country = country;
     this.encycloBack = encycloBack;
     this.genQuestion = genQuestion;
     this.idMap = idMap;
+    this.imageView3 = imageView3;
   }
 
   @Override
@@ -94,8 +99,14 @@ public final class ActivityGoogleMapsActivityBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageView3;
+      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView3 == null) {
+        break missingId;
+      }
+
       return new ActivityGoogleMapsActivityBinding((ConstraintLayout) rootView, country,
-          encycloBack, genQuestion, idMap);
+          encycloBack, genQuestion, idMap, imageView3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

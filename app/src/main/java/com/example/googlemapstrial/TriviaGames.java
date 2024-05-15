@@ -45,14 +45,16 @@ public class TriviaGames extends AppCompatActivity {
     /** Score key for SharedPreferences. **/
     private static final String SCORE_KEY = "score";
 
-    /** Integer counter to check how many answers the user gets wrong consecutively. **/
-    private int consecutiveWrongAnswers = 0;
-
     /** The first nation for the current trivia question. */
     GeoList firstNation;
 
     /** List of all nations loaded from JSON. */
     private ArrayList<GeoList> allNations = new ArrayList<>();
+
+    /**Int variable for current score**/
+    int currentScore = 0;
+
+    SharedPreferences.Editor editor;
 
     /**
      * Called when the activity is starting. This is where most initialization should go.
@@ -64,6 +66,7 @@ public class TriviaGames extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trivia_games);
         sharedPreferences = getSharedPreferences("TriviaScore", Context.MODE_PRIVATE);
+        sharedPreferences.edit().clear().apply();
 
         // Load nations from JSON file
         String temp = loadJSONFromAsset();
@@ -103,10 +106,19 @@ public class TriviaGames extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Finish the activity and return to the previous screen
                 finish();
             }
         });
+    }
+
+    /**
+     * clears the sharedpreferences when the activity is begin destroyed
+     */
+
+    protected void onDestroy() {
+        super.onDestroy();
+        // Clear SharedPreferences
+        sharedPreferences.edit().clear().apply();
     }
 
     /**
@@ -204,16 +216,9 @@ public class TriviaGames extends AppCompatActivity {
         if (selectedAnswer.equals(firstNation.getCity())) {
             Toast.makeText(TriviaGames.this, "Correct!", Toast.LENGTH_SHORT).show();
             updateScore(1);
-            consecutiveWrongAnswers = 0;
-
-        } else {
-            Toast.makeText(TriviaGames.this, "Wrong!", Toast.LENGTH_SHORT).show();
-            consecutiveWrongAnswers++;
-            if (consecutiveWrongAnswers >= 3) {
-                // Decrement score by 1 if wrong three times
-                updateScore(-1);
-                consecutiveWrongAnswers = 0; // Reset consecutive wrong answers counter
-            }
+        }
+        else{
+            Toast.makeText(TriviaGames.this, "Incorrect!", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -243,11 +248,11 @@ public class TriviaGames extends AppCompatActivity {
      */
     private void updateScore(int scoreChange) {
         // Retrieve current score from SharedPreferences
-        int currentScore = sharedPreferences.getInt(SCORE_KEY, 0);
+        currentScore = sharedPreferences.getInt(SCORE_KEY, 0);
         // Update score
         int updatedScore = currentScore + scoreChange;
         // Save updated score in SharedPreferences
-        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor = sharedPreferences.edit();
         editor.putInt(SCORE_KEY, updatedScore);
         editor.apply();
         // Update TextView to display the updated score
@@ -273,4 +278,7 @@ public class TriviaGames extends AppCompatActivity {
         }
         return json;
     }
+
+
+
 }

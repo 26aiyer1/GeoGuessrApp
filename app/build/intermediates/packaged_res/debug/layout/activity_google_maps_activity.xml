@@ -5,6 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="411dp"
+        android:layout_height="958dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/geo2" />
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/id_map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
@@ -18,9 +29,10 @@
 
     <Button
         android:id="@+id/genQuestion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="407dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="14dp"
+        android:background="#000000"
         android:text=" Generate Country"
         app:layout_constraintBottom_toTopOf="@+id/id_map"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,6 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
+        android:background="#000000"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

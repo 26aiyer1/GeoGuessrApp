@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -31,6 +32,9 @@ public final class ActivityGeminiClassBinding implements ViewBinding {
   public final Button goBack;
 
   @NonNull
+  public final ImageView imageView3;
+
+  @NonNull
   public final Button testgenerate;
 
   @NonNull
@@ -38,11 +42,12 @@ public final class ActivityGeminiClassBinding implements ViewBinding {
 
   private ActivityGeminiClassBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextInputEditText editText, @NonNull TextView geminitext, @NonNull Button goBack,
-      @NonNull Button testgenerate, @NonNull Button testsubmit) {
+      @NonNull ImageView imageView3, @NonNull Button testgenerate, @NonNull Button testsubmit) {
     this.rootView = rootView;
     this.editText = editText;
     this.geminitext = geminitext;
     this.goBack = goBack;
+    this.imageView3 = imageView3;
     this.testgenerate = testgenerate;
     this.testsubmit = testsubmit;
   }
@@ -92,6 +97,12 @@ public final class ActivityGeminiClassBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageView3;
+      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView3 == null) {
+        break missingId;
+      }
+
       id = R.id.testgenerate;
       Button testgenerate = ViewBindings.findChildViewById(rootView, id);
       if (testgenerate == null) {
@@ -105,7 +116,7 @@ public final class ActivityGeminiClassBinding implements ViewBinding {
       }
 
       return new ActivityGeminiClassBinding((ConstraintLayout) rootView, editText, geminitext,
-          goBack, testgenerate, testsubmit);
+          goBack, imageView3, testgenerate, testsubmit);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
