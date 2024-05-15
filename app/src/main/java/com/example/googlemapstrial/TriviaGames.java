@@ -36,6 +36,18 @@ public class TriviaGames extends AppCompatActivity {
     /** Buttons for navigating to the next question or returning to the previous screen. */
     Button backButton, nextButton;
 
+    /** TextView for displaying the score. **/
+    TextView scoreTracker;
+
+    /** SharedPreferences for storing the score. **/
+    SharedPreferences sharedPreferences;
+
+    /** Score key for SharedPreferences. **/
+    private static final String SCORE_KEY = "score";
+
+    /** Integer counter to check how many answers the user gets wrong consecutively. **/
+    private int consecutiveWrongAnswers = 0;
+
     /** The first nation for the current trivia question. */
     GeoList firstNation;
 
@@ -51,6 +63,7 @@ public class TriviaGames extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trivia_games);
+        sharedPreferences = getSharedPreferences("TriviaScore", Context.MODE_PRIVATE);
 
         // Load nations from JSON file
         String temp = loadJSONFromAsset();
@@ -63,6 +76,7 @@ public class TriviaGames extends AppCompatActivity {
 
         // Initialize views and buttons
         triviaGameTextView = findViewById(R.id.textView);
+        scoreTracker = findViewById(R.id.scoreTracker);
         buttonA = findViewById(R.id.button2);
         buttonB = findViewById(R.id.button3);
         buttonC = findViewById(R.id.button4);
@@ -189,8 +203,17 @@ public class TriviaGames extends AppCompatActivity {
     private void checkAnswer(String selectedAnswer) {
         if (selectedAnswer.equals(firstNation.getCity())) {
             Toast.makeText(TriviaGames.this, "Correct!", Toast.LENGTH_SHORT).show();
+            updateScore(1);
+            consecutiveWrongAnswers = 0;
+
         } else {
             Toast.makeText(TriviaGames.this, "Wrong!", Toast.LENGTH_SHORT).show();
+            consecutiveWrongAnswers++;
+            if (consecutiveWrongAnswers >= 3) {
+                // Decrement score by 1 if wrong three times
+                updateScore(-1);
+                consecutiveWrongAnswers = 0; // Reset consecutive wrong answers counter
+            }
         }
     }
 
@@ -211,6 +234,24 @@ public class TriviaGames extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+    }
+
+    /**
+     * Updates the score and saves it in SharedPreferences.
+     *
+     * @param scoreChange The change in score (positive or negative).
+     */
+    private void updateScore(int scoreChange) {
+        // Retrieve current score from SharedPreferences
+        int currentScore = sharedPreferences.getInt(SCORE_KEY, 0);
+        // Update score
+        int updatedScore = currentScore + scoreChange;
+        // Save updated score in SharedPreferences
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt(SCORE_KEY, updatedScore);
+        editor.apply();
+        // Update TextView to display the updated score
+        scoreTracker.setText("Score: " + updatedScore);
     }
 
     /**
