@@ -28,7 +28,7 @@
         android:layout_height="55dp"
         android:layout_marginTop="88dp"
         android:background="#34608F"
-        android:backgroundTint="#B3365380"
+        android:backgroundTint="#B3E7EAEF"
         android:fontFamily="cursive"
         android:text="GeoGuessr App"
         android:textAlignment="center"

@@ -3044,7 +3044,7 @@ int drawable design_ic_visibility_off 0x7f070097
 int drawable design_password_eye 0x7f070098
 int drawable design_snackbar_background 0x7f070099
 int drawable geo 0x7f07009a
-int drawable geov 0x7f07009b
+int drawable geo2 0x7f0700fd
 int drawable googleg_disabled_color_18 0x7f07009c
 int drawable googleg_standard_color_18 0x7f07009d
 int drawable ic_arrow_back_black_24 0x7f07009e
@@ -3331,7 +3331,6 @@ int id easeInOut 0x7f0800b9
 int id easeOut 0x7f0800ba
 int id east 0x7f0800bb
 int id edge 0x7f0800bc
-int id editText 0x7f0800bd
 int id edit_query 0x7f0800be
 int id edit_text_id 0x7f0800bf
 int id elastic 0x7f0800c0
@@ -3362,11 +3361,9 @@ int id forever 0x7f0800d8
 int id fragment_container_view_tag 0x7f0800d9
 int id frost 0x7f0800da
 int id fullscreen_header 0x7f0800db
-int id geminitext 0x7f0800dc
 int id genQuestion 0x7f0800dd
 int id ghost_view 0x7f0800de
 int id ghost_view_holder 0x7f0800df
-int id goBack 0x7f0800e0
 int id gone 0x7f0800e1
 int id graph 0x7f0800e2
 int id graph_wrap 0x7f0800e3
@@ -3616,8 +3613,6 @@ int id tag_unhandled_key_event_manager 0x7f0801d6
 int id tag_unhandled_key_listeners 0x7f0801d7
 int id tag_window_insets_animation_callback 0x7f0801d8
 int id terrain 0x7f0801d9
-int id testgenerate 0x7f0801da
-int id testsubmit 0x7f0801db
 int id text 0x7f0801dc
 int id text2 0x7f0801dd
 int id textEnd 0x7f0801de
@@ -3795,7 +3790,6 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_credits 0x7f0b001c
-int layout activity_gemini_class 0x7f0b001d
 int layout activity_geo 0x7f0b001e
 int layout activity_geo_main 0x7f0b001f
 int layout activity_google_maps_activity 0x7f0b0020

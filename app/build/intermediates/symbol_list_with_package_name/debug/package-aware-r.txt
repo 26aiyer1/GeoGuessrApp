@@ -3045,7 +3045,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable geo
-drawable geov
+drawable geo2
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_arrow_back_black_24
@@ -3332,7 +3332,6 @@ id easeInOut
 id easeOut
 id east
 id edge
-id editText
 id edit_query
 id edit_text_id
 id elastic
@@ -3363,11 +3362,9 @@ id forever
 id fragment_container_view_tag
 id frost
 id fullscreen_header
-id geminitext
 id genQuestion
 id ghost_view
 id ghost_view_holder
-id goBack
 id gone
 id graph
 id graph_wrap
@@ -3617,8 +3614,6 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id terrain
-id testgenerate
-id testsubmit
 id text
 id text2
 id textEnd
@@ -3796,7 +3791,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_credits
-layout activity_gemini_class
 layout activity_geo
 layout activity_geo_main
 layout activity_google_maps_activity
