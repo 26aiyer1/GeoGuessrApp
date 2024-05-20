@@ -43,6 +43,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.GoogleMapsTrial" >
         <activity
+            android:name="com.example.googlemapstrial.MapWithCountries"
+            android:exported="false" />
+        <activity
+            android:name="com.example.googlemapstrial.PreEncyclopedia"
+            android:exported="false" />
+        <activity
             android:name="com.example.googlemapstrial.Credits"
             android:exported="false" />
         <activity

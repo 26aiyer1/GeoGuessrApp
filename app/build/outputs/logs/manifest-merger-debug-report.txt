@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:2:1-56:12
-INJECTED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:2:1-56:12
+ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:2:1-62:12
 MERGED from [androidx.databinding:viewbinding:8.2.2] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/686b5a51f57bdb2d6cebf440717b2d2e/transformed/viewbinding-8.2.2/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.11.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/44375abf9ab55232e2bfa216064813ab/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/9be1f8884cbef11e0c70c1749175b5f6/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
@@ -86,8 +86,8 @@ ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/
 	android:name
 		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:10:22-78
 application
-ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:12:5-54:19
-INJECTED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:12:5-54:19
+ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:12:5-60:19
+INJECTED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:12:5-60:19
 MERGED from [com.google.android.material:material:1.11.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/44375abf9ab55232e2bfa216064813ab/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/44375abf9ab55232e2bfa216064813ab/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/adhvikharikrishnan/.gradle/caches/transforms-3/9be1f8884cbef11e0c70c1749175b5f6/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -134,64 +134,76 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/adhvikharikrishnan/.
 		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:20:9-53
 	android:dataExtractionRules
 		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:14:9-65
-activity#com.example.googlemapstrial.Credits
+activity#com.example.googlemapstrial.MapWithCountries
 ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:22:9-24:40
 	android:exported
 		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:23:13-36
-activity#com.example.googlemapstrial.TriviaGames
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:23:13-45
+activity#com.example.googlemapstrial.PreEncyclopedia
 ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:25:9-27:40
 	android:exported
 		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:26:13-40
-activity#com.example.googlemapstrial.GeoActivity
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:26:13-44
+activity#com.example.googlemapstrial.Credits
 ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:28:9-30:40
 	android:exported
 		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:29:13-40
-activity#com.example.googlemapstrial.GeoMain
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:29:13-36
+activity#com.example.googlemapstrial.TriviaGames
 ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:31:9-33:40
 	android:exported
 		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:33:13-37
 	android:name
-		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:32:13-36
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:32:13-40
+activity#com.example.googlemapstrial.GeoActivity
+ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:34:9-36:40
+	android:exported
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:36:13-37
+	android:name
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:35:13-40
+activity#com.example.googlemapstrial.GeoMain
+ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:37:9-39:40
+	android:exported
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:38:13-36
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:35:9-37:71
+ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:41:9-43:71
 	android:value
-		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:37:13-68
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:43:13-68
 	android:name
-		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:36:13-58
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:42:13-58
 activity#com.example.googlemapstrial.GeminiClass
-ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:39:9-41:40
+ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:45:9-47:40
 	android:exported
-		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:41:13-37
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:47:13-37
 	android:name
-		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:40:13-40
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:46:13-40
 activity#com.example.googlemapstrial.GoogleMapsActivity
-ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:42:9-44:40
+ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:48:9-50:40
 	android:exported
-		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:44:13-37
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:50:13-37
 	android:name
-		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:43:13-47
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:49:13-47
 activity#com.example.googlemapstrial.MainActivity
-ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:45:9-53:20
+ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:51:9-59:20
 	android:exported
-		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:47:13-36
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:53:13-36
 	android:name
-		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:46:13-41
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:52:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:48:13-52:29
+ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:54:13-58:29
 action#android.intent.action.MAIN
-ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:49:17-69
+ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:55:17-69
 	android:name
-		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:49:25-66
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:55:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:51:17-77
+ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:57:17-77
 	android:name
-		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:51:27-74
+		ADDED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml:57:27-74
 uses-sdk
 INJECTED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/adhvikharikrishnan/AndroidStudioProjects/GeoGuessrApp/app/src/main/AndroidManifest.xml

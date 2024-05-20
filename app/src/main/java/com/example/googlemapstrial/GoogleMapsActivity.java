@@ -61,13 +61,13 @@ public class GoogleMapsActivity extends AppCompatActivity implements OnMapReadyC
      *
      * @param savedInstanceState The saved instance state.
      */
-    @SuppressLint("CutPasteId")
+    @SuppressLint({"CutPasteId", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_google_maps_activity);
         country = findViewById(R.id.country);
-        back = findViewById(R.id.encyclo_back);
+        back = findViewById(R.id.asdf);
         genQuestion = findViewById(R.id.genQuestion);
 
         intent = new Intent(GoogleMapsActivity.this, MainActivity.class);

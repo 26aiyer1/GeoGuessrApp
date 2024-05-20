@@ -3228,6 +3228,7 @@ id antiClockwise
 id anticipate
 id arc
 id asConfigured
+id asdf
 id async
 id auto
 id autoComplete
@@ -3252,7 +3253,6 @@ id button3
 id button4
 id button5
 id button6
-id button7
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3336,7 +3336,6 @@ id edit_query
 id edit_text_id
 id elastic
 id embed
-id encyclo_back
 id encyclopedia_button
 id end
 id endToStart
@@ -3411,6 +3410,7 @@ id linear
 id listMode
 id list_item
 id m3_side_sheet
+id mainback
 id marquee
 id masked
 id match_constraint
@@ -3547,6 +3547,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id search
 id search_badge
 id search_bar
 id search_button
@@ -3623,6 +3624,8 @@ id textStart
 id textTop
 id textView
 id textView2
+id textView3
+id textView4
 id textViewQuestion
 id text_input_end_icon
 id text_input_error_icon
@@ -3795,6 +3798,7 @@ layout activity_geo
 layout activity_geo_main
 layout activity_google_maps_activity
 layout activity_main
+layout activity_map_with_countries
 layout activity_trivia_games
 layout card_design
 layout custom_dialog
@@ -3880,6 +3884,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw style_json
+raw style_json2
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

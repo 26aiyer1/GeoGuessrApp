@@ -3,9 +3,6 @@ package com.example.googlemapstrial;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
-import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,7 +16,6 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.Arrays;
 
 /**
  * TriviaGames class represents the activity for the trivia game.
@@ -34,8 +30,8 @@ public class TriviaGames extends AppCompatActivity {
     /** Buttons for multiple-choice answers. */
     Button buttonA, buttonB, buttonC, buttonD;
 
-    /** Buttons for navigating to the next question or returning to the previous screen. */
-    Button backButton, nextButton;
+    /** Button for returning to the previous screen. */
+    Button backButton;
 
     /** The first nation for the current trivia question. */
     GeoList firstNation;
@@ -72,7 +68,6 @@ public class TriviaGames extends AppCompatActivity {
         buttonC = findViewById(R.id.button4);
         buttonD = findViewById(R.id.button5);
         backButton = findViewById(R.id.button6);
-        nextButton = findViewById(R.id.button7);
 
         // Generate a random question
         generateQuestion();
@@ -80,14 +75,6 @@ public class TriviaGames extends AppCompatActivity {
         // Set click listeners for answer buttons
         setAnswerButtonListeners();
 
-        // Set click listener for the next button
-        nextButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Generate a new random question
-                generateQuestion();
-            }
-        });
 
         // Set click listener for the back button
         backButton.setOnClickListener(new View.OnClickListener() {
@@ -195,10 +182,20 @@ public class TriviaGames extends AppCompatActivity {
             score=score+2;
             Toast.makeText(TriviaGames.this, "Correct!", Toast.LENGTH_SHORT).show();
             scoreTextView.setText("Score: " + score);
+            generateQuestion();
         } else {
             score=score-1;
             Toast.makeText(TriviaGames.this, "Wrong!", Toast.LENGTH_SHORT).show();
             scoreTextView.setText("Score: " + score);
+            generateQuestion();
+        }
+
+        if (score >= 50) {
+            // Game over condition
+            Toast.makeText(TriviaGames.this, "Game Over!", Toast.LENGTH_SHORT).show();
+            score = 0; // Reset score
+            scoreTextView.setText("Score: " + score);
+            generateQuestion(); // Generate new question
         }
     }
 

@@ -37,9 +37,6 @@ public final class ActivityTriviaGamesBinding implements ViewBinding {
   public final Button button6;
 
   @NonNull
-  public final Button button7;
-
-  @NonNull
   public final ImageView imageView3;
 
   @NonNull
@@ -48,20 +45,23 @@ public final class ActivityTriviaGamesBinding implements ViewBinding {
   @NonNull
   public final TextView textView2;
 
+  @NonNull
+  public final TextView textView3;
+
   private ActivityTriviaGamesBinding(@NonNull ConstraintLayout rootView, @NonNull Button button2,
       @NonNull Button button3, @NonNull Button button4, @NonNull Button button5,
-      @NonNull Button button6, @NonNull Button button7, @NonNull ImageView imageView3,
-      @NonNull TextView textView, @NonNull TextView textView2) {
+      @NonNull Button button6, @NonNull ImageView imageView3, @NonNull TextView textView,
+      @NonNull TextView textView2, @NonNull TextView textView3) {
     this.rootView = rootView;
     this.button2 = button2;
     this.button3 = button3;
     this.button4 = button4;
     this.button5 = button5;
     this.button6 = button6;
-    this.button7 = button7;
     this.imageView3 = imageView3;
     this.textView = textView;
     this.textView2 = textView2;
+    this.textView3 = textView3;
   }
 
   @Override
@@ -121,12 +121,6 @@ public final class ActivityTriviaGamesBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.button7;
-      Button button7 = ViewBindings.findChildViewById(rootView, id);
-      if (button7 == null) {
-        break missingId;
-      }
-
       id = R.id.imageView3;
       ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
       if (imageView3 == null) {
@@ -145,8 +139,14 @@ public final class ActivityTriviaGamesBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView3;
+      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
+      if (textView3 == null) {
+        break missingId;
+      }
+
       return new ActivityTriviaGamesBinding((ConstraintLayout) rootView, button2, button3, button4,
-          button5, button6, button7, imageView3, textView, textView2);
+          button5, button6, imageView3, textView, textView2, textView3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

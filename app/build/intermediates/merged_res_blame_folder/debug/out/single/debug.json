@@ -28,10 +28,6 @@
         "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-main-36:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.googlemapstrial.app-merged_res-34:/layout_activity_trivia_games.xml.flat",
-        "source": "com.example.googlemapstrial.app-main-36:/layout/activity_trivia_games.xml"
-    },
-    {
         "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-merged_res-34:/layout_card_design.xml.flat",
         "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-main-36:/layout/card_design.xml"
     },
@@ -50,6 +46,10 @@
     {
         "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-merged_res-34:/mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-main-36:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-merged_res-34:/drawable_geo2.jpg.flat",
+        "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-main-36:/drawable/geo2.jpg"
     },
     {
         "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-merged_res-34:/drawable_geo.jpeg.flat",
@@ -72,8 +72,8 @@
         "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-main-36:/layout/activity_gemini_class.xml"
     },
     {
-        "merged": "com.example.googlemapstrial.app-merged_res-34:/layout_activity_main.xml.flat",
-        "source": "com.example.googlemapstrial.app-main-36:/layout/activity_main.xml"
+        "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-merged_res-34:/layout_activity_map_with_countries.xml.flat",
+        "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-main-36:/layout/activity_map_with_countries.xml"
     },
     {
         "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-merged_res-34:/layout_activity_main.xml.flat",
@@ -88,8 +88,16 @@
         "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-main-36:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
+        "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-merged_res-34:/layout_activity_pre_encyclopedia.xml.flat",
+        "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-main-36:/layout/activity_pre_encyclopedia.xml"
+    },
+    {
         "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-main-36:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-merged_res-34:/raw_style_json2.json.flat",
+        "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-main-36:/raw/style_json2.json"
     },
     {
         "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-merged_res-34:/xml_backup_rules.xml.flat",
@@ -98,10 +106,6 @@
     {
         "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-merged_res-34:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-main-36:/mipmap-xxxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.googlemapstrial.app-merged_res-34:/layout_activity_google_maps_activity.xml.flat",
-        "source": "com.example.googlemapstrial.app-main-36:/layout/activity_google_maps_activity.xml"
     },
     {
         "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-merged_res-34:/mipmap-hdpi_ic_launcher.webp.flat",
@@ -122,9 +126,5 @@
     {
         "merged": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-merged_res-34:/layout_activity_geo.xml.flat",
         "source": "/Users/adhvikharikrishnan/.gradle/daemon/8.2/com.example.googlemapstrial.app-main-36:/layout/activity_geo.xml"
-    },
-    {
-        "merged": "com.example.googlemapstrial.app-merged_res-34:/drawable_geo2.jpg.flat",
-        "source": "com.example.googlemapstrial.app-main-36:/drawable/geo2.jpg"
     }
 ]

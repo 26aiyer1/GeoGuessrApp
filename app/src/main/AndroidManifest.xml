@@ -20,6 +20,12 @@
         android:theme="@style/Theme.GoogleMapsTrial"
         tools:targetApi="33">
         <activity
+            android:name=".MapWithCountries"
+            android:exported="false" />
+        <activity
+            android:name=".PreEncyclopedia"
+            android:exported="false" />
+        <activity
             android:name=".Credits"
             android:exported="false" />
         <activity
