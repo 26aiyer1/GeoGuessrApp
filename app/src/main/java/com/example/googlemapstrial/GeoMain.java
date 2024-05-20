@@ -24,8 +24,12 @@ public class GeoMain extends AppCompatActivity {
     private ArrayList<GeoList> geoList = new ArrayList<>();
     private RecyclerView recyclerView;
     private RecyclerAdapter recyclerAdapter;
-    private SearchView searchView;
     private List<GeoList> filteredList = new ArrayList<>();
+
+    Button toMaps;
+
+
+    Intent intent2;
 
     @SuppressLint({"MissingInflatedId", "SetTextI18n"})
     @Override
@@ -33,9 +37,10 @@ public class GeoMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geo_main);
 
+        toMaps = findViewById(R.id.button87);
+
         Button backButton = findViewById(R.id.backGo);
         recyclerView = findViewById(R.id.RecyclerView);
-        searchView = findViewById(R.id.search);
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,18 +53,17 @@ public class GeoMain extends AppCompatActivity {
         recyclerView.setAdapter(recyclerAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(GeoMain.this));
 
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                return false;
-            }
+        intent2 = new Intent(this,MapWithCountries.class);
 
+
+        toMaps.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onQueryTextChange(String newText) {
-                filter(newText.toLowerCase(Locale.getDefault()));
-                return true;
+            public void onClick(View v) {
+                startActivity(intent2);
             }
         });
+
+
 
         String jsonData = loadJSONFromAsset();
         try {
@@ -99,13 +103,4 @@ public class GeoMain extends AppCompatActivity {
         return json;
     }
 
-    private void filter(String text) {
-        filteredList.clear();
-        for (GeoList item : geoList) {
-            if (item.getCountry().toLowerCase(Locale.getDefault()).contains(text)) {
-                filteredList.add(item);
-            }
-        }
-        recyclerAdapter.filterList((ArrayList<GeoList>) filteredList);
-    }
 }

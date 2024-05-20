@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.SearchView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -30,22 +29,22 @@ public final class ActivityGeoMainBinding implements ViewBinding {
   public final Button backGo;
 
   @NonNull
-  public final ImageView imageView3;
+  public final Button button87;
 
   @NonNull
-  public final SearchView search;
+  public final ImageView imageView3;
 
   @NonNull
   public final TextView textView4;
 
   private ActivityGeoMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull RecyclerView RecyclerView, @NonNull Button backGo, @NonNull ImageView imageView3,
-      @NonNull SearchView search, @NonNull TextView textView4) {
+      @NonNull RecyclerView RecyclerView, @NonNull Button backGo, @NonNull Button button87,
+      @NonNull ImageView imageView3, @NonNull TextView textView4) {
     this.rootView = rootView;
     this.RecyclerView = RecyclerView;
     this.backGo = backGo;
+    this.button87 = button87;
     this.imageView3 = imageView3;
-    this.search = search;
     this.textView4 = textView4;
   }
 
@@ -88,15 +87,15 @@ public final class ActivityGeoMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageView3;
-      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
-      if (imageView3 == null) {
+      id = R.id.button87;
+      Button button87 = ViewBindings.findChildViewById(rootView, id);
+      if (button87 == null) {
         break missingId;
       }
 
-      id = R.id.search;
-      SearchView search = ViewBindings.findChildViewById(rootView, id);
-      if (search == null) {
+      id = R.id.imageView3;
+      ImageView imageView3 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView3 == null) {
         break missingId;
       }
 
@@ -106,8 +105,8 @@ public final class ActivityGeoMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityGeoMainBinding((ConstraintLayout) rootView, RecyclerView, backGo,
-          imageView3, search, textView4);
+      return new ActivityGeoMainBinding((ConstraintLayout) rootView, RecyclerView, backGo, button87,
+          imageView3, textView4);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

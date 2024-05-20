@@ -16,6 +16,7 @@ id button3
 id button4
 id button5
 id button6
+id button87
 id capitalName
 id cardView
 id country
@@ -27,7 +28,6 @@ id id_map
 id imageView
 id imageView3
 id mainback
-id search
 id startButton
 id textView
 id textView2

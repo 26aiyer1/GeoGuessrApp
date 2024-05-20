@@ -3253,6 +3253,7 @@ id button3
 id button4
 id button5
 id button6
+id button87
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3547,7 +3548,6 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
-id search
 id search_badge
 id search_bar
 id search_button

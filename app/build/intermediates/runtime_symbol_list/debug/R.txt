@@ -3252,6 +3252,7 @@ int id button3 0x7f080069
 int id button4 0x7f08006a
 int id button5 0x7f08006b
 int id button6 0x7f08006c
+int id button87 0x7f080222
 int id buttonPanel 0x7f08006e
 int id cache_measures 0x7f08006f
 int id callMeasure 0x7f080070
@@ -3546,7 +3547,6 @@ int id scrollIndicatorDown 0x7f080193
 int id scrollIndicatorUp 0x7f080194
 int id scrollView 0x7f080195
 int id scrollable 0x7f080196
-int id search 0x7f080220
 int id search_badge 0x7f080197
 int id search_bar 0x7f080198
 int id search_button 0x7f080199
