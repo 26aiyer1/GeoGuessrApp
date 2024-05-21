@@ -105,8 +105,8 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="384dp"
-        android:layout_height="84dp"
+        android:layout_width="375dp"
+        android:layout_height="80dp"
         android:text="The goal of this game is to get a score above 50. When you get to 50 or above, the game resets. If you get a question correct, you get +2 points; otherwise, its -1 point.  Good Luck!"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"

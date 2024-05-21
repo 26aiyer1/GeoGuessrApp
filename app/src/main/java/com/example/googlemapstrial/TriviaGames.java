@@ -3,6 +3,8 @@ package com.example.googlemapstrial;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +35,12 @@ public class TriviaGames extends AppCompatActivity {
     /** Button for returning to the previous screen. */
     Button backButton;
 
+    /** SharedPreferences for storing the score. **/
+    SharedPreferences sharedPreferences;
+
+    /** Score key for SharedPreferences. **/
+    private static final String SCORE_KEY = "score";
+
     /** The first nation for the current trivia question. */
     GeoList firstNation;
     int score;
@@ -50,6 +58,13 @@ public class TriviaGames extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trivia_games);
+
+        // Initialize SharedPreferences
+        sharedPreferences = getSharedPreferences("TriviaScore", Context.MODE_PRIVATE);
+        sharedPreferences.edit().clear().apply();
+
+        // Load score from SharedPreferences
+        score = sharedPreferences.getInt(SCORE_KEY, 0);
 
         // Load nations from JSON file
         String temp = loadJSONFromAsset();
@@ -69,12 +84,14 @@ public class TriviaGames extends AppCompatActivity {
         buttonD = findViewById(R.id.button5);
         backButton = findViewById(R.id.button6);
 
+        // Display the initial score
+        scoreTextView.setText("Score: " + score);
+
         // Generate a random question
         generateQuestion();
 
         // Set click listeners for answer buttons
         setAnswerButtonListeners();
-
 
         // Set click listener for the back button
         backButton.setOnClickListener(new View.OnClickListener() {
@@ -179,24 +196,32 @@ public class TriviaGames extends AppCompatActivity {
      */
     private void checkAnswer(String selectedAnswer) {
         if (selectedAnswer.equals(firstNation.getCity())) {
-            score=score+2;
+            score = score + 2;
             Toast.makeText(TriviaGames.this, "Correct!", Toast.LENGTH_SHORT).show();
-            scoreTextView.setText("Score: " + score);
-            generateQuestion();
         } else {
-            score=score-1;
+            score = score - 1;
             Toast.makeText(TriviaGames.this, "Wrong!", Toast.LENGTH_SHORT).show();
-            scoreTextView.setText("Score: " + score);
-            generateQuestion();
         }
 
+        // Update the score in SharedPreferences
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt(SCORE_KEY, score);
+        editor.apply();
+
+        // Update the score display
+        scoreTextView.setText("Score: " + score);
+
+        // Generate new question or check for game over condition
         if (score >= 50) {
             // Game over condition
             Toast.makeText(TriviaGames.this, "Game Over!", Toast.LENGTH_SHORT).show();
             score = 0; // Reset score
-            scoreTextView.setText("Score: " + score);
-            generateQuestion(); // Generate new question
+            // Update the score in SharedPreferences
+            editor.putInt(SCORE_KEY, score);
+            editor.apply();
         }
+
+        generateQuestion();
     }
 
     /**
@@ -236,5 +261,12 @@ public class TriviaGames extends AppCompatActivity {
             e.printStackTrace();
         }
         return json;
+    }
+
+    /** Clears SharedPreferences when the app is closed **/
+    protected void onDestroy(){
+        super.onDestroy();
+        // Clears SharedPreferences
+        sharedPreferences.edit().clear().apply();
     }
 }

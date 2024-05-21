@@ -49,19 +49,21 @@
         android:id="@+id/backGo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#000000"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/RecyclerView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.845" />
 
     <Button
         android:id="@+id/button87"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click on map with countries"
+        android:background="#000000"
+        android:text="Map With Country Names"
         app:layout_constraintBottom_toTopOf="@+id/backGo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
